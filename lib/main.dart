@@ -1,6 +1,8 @@
+import 'package:chayil/utilities/managers/dependency_container.dart';
 import 'package:flutter/material.dart';
 
 void main() {
+  setupDependencies();
   runApp(const MyApp());
 }
 
