@@ -28,14 +28,12 @@ enum UserRole {
 
 @JsonSerializable()
 class User {
-  final String id;
   final String email;
   final String? deviceId;
   final UserStatus status;
   final UserRole role;
 
   User({
-    required this.id,
     required this.email,
     this.deviceId,
     required this.status,
