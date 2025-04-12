@@ -5,7 +5,7 @@ final ThemeData appTheme = ThemeData(
   brightness: Brightness.dark,
   scaffoldBackgroundColor: AppColors.backgroundPrimary,
   fontFamily: 'Roboto',
-  appBarTheme: AppBarTheme(
+  appBarTheme: const AppBarTheme(
     color: AppColors.navBar,
     iconTheme: IconThemeData(color: AppColors.textPrimary),
     titleTextStyle: TextStyle(
@@ -14,7 +14,7 @@ final ThemeData appTheme = ThemeData(
       fontWeight: FontWeight.w500,
     ),
   ),
-  colorScheme: ColorScheme.dark(
+  colorScheme: const ColorScheme.dark(
     primary: AppColors.accent,
     background: AppColors.backgroundPrimary,
     onBackground: AppColors.textPrimary,
@@ -24,7 +24,7 @@ final ThemeData appTheme = ThemeData(
     onSurface: AppColors.textPrimary,
   ),
   dividerColor: AppColors.separator,
-  textTheme: TextTheme(
+  textTheme: const TextTheme(
     bodyLarge: TextStyle(
       color: AppColors.textPrimary,
       fontSize: 16,
