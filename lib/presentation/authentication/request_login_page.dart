@@ -11,7 +11,7 @@ class LoginPage extends StatelessWidget {
       backgroundColor: backgroundColor,
       body: Center(
         child: Text(
-          'MAIN TAB',
+          'REQUEST LOGIN',
           style: headerTextStyle,
         ),
       ),
