@@ -6,11 +6,24 @@ class NetworkService {
   static final NetworkService _instance = NetworkService._privateConstructor();
   factory NetworkService() => _instance;
 
-  final _baseUrl = 'https://api.chayil.com/v1';
+  final _baseUrl = 'https://api.chayilmartialarts.com/v1';
 
   Future<dynamic> get(String endpoint, {Map<String, String>? headers}) async {
-    final response =
-        await http.get(Uri.parse('$_baseUrl/$endpoint'), headers: headers);
+    final now = DateTime.now().toIso8601String();
+    final uri = Uri.parse('$_baseUrl/$endpoint');
+
+    // Build a new URI with the existing query + nocache param
+    final updatedUri = uri.replace(
+      queryParameters: {
+        ...uri.queryParameters,
+        'nocache': now,
+      },
+    );
+
+// TODO: EZ - Remove
+    print('🔗 Final URL: $updatedUri');
+
+    final response = await http.get(updatedUri, headers: headers);
     return _handleResponse(response);
   }
 

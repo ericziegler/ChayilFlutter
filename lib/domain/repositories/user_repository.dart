@@ -66,7 +66,7 @@ class UserRepository {
 
   Future<User?> authenticateUser() async {
     final email = await loadSecureEmail();
-    final deviceId = await _getOrCreateDeviceId();
+    final deviceId = await _loadCachedDeviceId() ?? '';
 
     if (email == null) return null;
 
@@ -74,6 +74,8 @@ class UserRepository {
   }
 
   Future<User?> _authenticate(String email, String deviceId) async {
+    // TODO: EZ - Remove
+    print('👉 Authenticating with email=$email & device=$deviceId');
     final response = await _network.get(
       'user/authenticate.php?email=$email&device=$deviceId',
     );
@@ -129,14 +131,21 @@ class UserRepository {
   }
 
   // Register device ID for a user
-  Future<User> registerDevice(String email, String deviceId) async {
+  Future<User> registerDevice(String email, String? existingDeviceId) async {
+    final deviceId = existingDeviceId ?? await _getOrCreateDeviceId();
+
     final response = await _network.get(
       'user/register_device.php?email=$email&device=$deviceId',
     );
 
     final user = User.fromJson(response);
+    await _secureStorage.write(_authDeviceIdKey, deviceId);
     await _saveUser(user);
     return user;
+  }
+
+  Future<String?> _loadCachedDeviceId() async {
+    return await _secureStorage.read(_authDeviceIdKey);
   }
 
   Future<String> _getOrCreateDeviceId() async {

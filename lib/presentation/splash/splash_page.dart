@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:chayil/domain/repositories/user_repository.dart';
-import 'package:chayil/domain/services/network_service.dart';
-import 'package:chayil/domain/services/secure_storage_service.dart';
 import 'package:chayil/presentation/authentication/request_login_page.dart';
 import 'package:chayil/presentation/authentication/register_device_page.dart';
 import 'package:chayil/presentation/main_tab/main_tab_page.dart';
