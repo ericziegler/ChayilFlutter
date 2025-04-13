@@ -1,9 +1,11 @@
 import 'package:chayil/utilities/styles/text_styles.dart';
 import 'package:flutter/material.dart';
+import 'package:chayil/domain/repositories/technique_repository.dart';
 import 'package:chayil/utilities/components/alert_dialog.dart';
 import 'package:chayil/utilities/components/loading_widget.dart';
 import 'package:chayil/utilities/styles/colors.dart';
 import 'package:chayil/domain/models/techniques/technique.dart';
+import 'package:chayil/domain/models/ranks/rank.dart';
 import 'package:chewie/chewie.dart';
 import 'package:video_player/video_player.dart';
 
@@ -12,16 +14,33 @@ class TechniquePage extends StatefulWidget {
   const TechniquePage({Key? key, required this.id}) : super(key: key);
 
   @override
-  _TechniquePageState createState() => _TechniquePageState();
+  TechniquePageState createState() => TechniquePageState();
 }
 
-class _TechniquePageState extends State<TechniquePage> {
+class TechniquePageState extends State<TechniquePage> {
+  final _techniqueRepository = TechniqueRepository();
   bool _isLoading = false;
   static const _horizontalInset = 16.0;
   static const _verticalPadding = 16.0;
-  Technique _technique = Technique(id: '', name: '');
-  List<VideoPlayerController> _videoPlayerControllers = [];
-  List<ChewieController> _chewieControllers = [];
+  Technique _technique = Technique(
+      id: '',
+      name: '',
+      details: '',
+      advancedNotes: '',
+      rankId: '',
+      categoryId: '',
+      sortOrder: 0);
+  Rank _rank = Rank(
+      id: '',
+      name: '',
+      imageAsset: '',
+      primaryColor: '',
+      secondaryColor: '',
+      sortOrder: 0);
+  List<String> _videoUrls = [];
+
+  final List<VideoPlayerController> _videoPlayerControllers = [];
+  final List<ChewieController> _chewieControllers = [];
   int _currentPageIndex = 0;
 
   @override
@@ -47,11 +66,17 @@ class _TechniquePageState extends State<TechniquePage> {
     });
 
     try {
-      var loadedTechnique =
-          await TechniqueRepository().loadTechnique(widget.id);
+      final loadedTechnique =
+          await _techniqueRepository.getTechnique(widget.id);
+      final loadedRank =
+          await _techniqueRepository.getRank(loadedTechnique.rankId);
+      final videos = await _techniqueRepository.getTechniqueVideos(widget.id);
+
       if (mounted) {
         setState(() {
           _technique = loadedTechnique;
+          _rank = loadedRank;
+          _videoUrls = videos;
           _loadVideos();
         });
       }
@@ -70,22 +95,23 @@ class _TechniquePageState extends State<TechniquePage> {
   }
 
   void _loadVideos() {
-    if (_technique.videos != null) {
-      for (var video in _technique.videos!) {
-        var videoPlayerController = VideoPlayerController.network(video.url);
-        videoPlayerController.initialize().then((_) {
-          var chewieController = ChewieController(
-            videoPlayerController: videoPlayerController,
-            autoPlay: false,
-            looping: false,
-          );
+    for (var url in _videoUrls) {
+      final videoPlayerController =
+          VideoPlayerController.networkUrl(Uri.parse(url));
+      videoPlayerController.initialize().then((_) {
+        final chewieController = ChewieController(
+          videoPlayerController: videoPlayerController,
+          autoPlay: false,
+          looping: false,
+        );
 
-          _videoPlayerControllers.add(videoPlayerController);
-          _chewieControllers.add(chewieController);
+        _videoPlayerControllers.add(videoPlayerController);
+        _chewieControllers.add(chewieController);
 
+        if (mounted) {
           setState(() {});
-        });
-      }
+        }
+      });
     }
   }
 
@@ -98,8 +124,7 @@ class _TechniquePageState extends State<TechniquePage> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
-                if (_technique.videos != null && _technique.videos!.isNotEmpty)
-                  _buildVideoCarousel(),
+                if (_videoUrls.isNotEmpty) _buildVideoCarousel(),
                 const SizedBox(height: _verticalPadding),
                 Padding(
                   padding:
@@ -110,8 +135,8 @@ class _TechniquePageState extends State<TechniquePage> {
                 Padding(
                   padding:
                       const EdgeInsets.symmetric(horizontal: _horizontalInset),
-                  child: Text(_technique.rank?.belt.toUpperCase() ?? '',
-                      style: techniqueRankStyle),
+                  child:
+                      Text(_rank.name.toUpperCase(), style: techniqueRankStyle),
                 ),
                 const SizedBox(height: _verticalPadding),
                 const Divider(color: separatorColor),
@@ -132,8 +157,8 @@ class _TechniquePageState extends State<TechniquePage> {
                   const SizedBox(height: _verticalPadding),
                   const Divider(color: separatorColor),
                 ],
-                if (_technique.formattedInstructorNotes() != null &&
-                    _technique.formattedInstructorNotes()!.isNotEmpty) ...[
+                if (_technique.formattedAdvancedNotes() != null &&
+                    _technique.formattedAdvancedNotes()!.isNotEmpty) ...[
                   const SizedBox(height: _verticalPadding),
                   const Padding(
                     padding: EdgeInsets.symmetric(horizontal: _horizontalInset),
@@ -143,7 +168,7 @@ class _TechniquePageState extends State<TechniquePage> {
                   Padding(
                     padding: const EdgeInsets.symmetric(
                         horizontal: _horizontalInset),
-                    child: Text(_technique.formattedInstructorNotes()!,
+                    child: Text(_technique.formattedAdvancedNotes()!,
                         style: techniqueDetailsStyle),
                   ),
                   const SizedBox(height: _verticalPadding),
@@ -178,7 +203,7 @@ class _TechniquePageState extends State<TechniquePage> {
             },
           ),
         ),
-        if (_technique.videos != null && _technique.videos!.length > 1)
+        if (_videoUrls.length > 1)
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: Align(

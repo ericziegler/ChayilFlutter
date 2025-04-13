@@ -22,6 +22,18 @@ class Technique {
     required this.sortOrder,
   });
 
+  String? formattedDetails() {
+    const find = '\\n';
+    const replaceWith = '\n';
+    return details.replaceAll(find, replaceWith);
+  }
+
+  String? formattedAdvancedNotes() {
+    const find = '\\n';
+    const replaceWith = '\n';
+    return advancedNotes.replaceAll(find, replaceWith);
+  }
+
   factory Technique.fromJson(Map<String, dynamic> json) =>
       _$TechniqueFromJson(json);
 

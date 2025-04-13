@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:chayil/domain/repositories/technique_repository.dart';
 import 'package:chayil/domain/models/categories/category.dart';
 import 'package:chayil/utilities/components/alert_dialog.dart';
 import 'package:chayil/utilities/components/loading_widget.dart';
@@ -10,11 +11,12 @@ class CategoriesPage extends StatefulWidget {
   const CategoriesPage({Key? key}) : super(key: key);
 
   @override
-  _CategoriesPageState createState() => _CategoriesPageState();
+  CategoriesPageState createState() => CategoriesPageState();
 }
 
-class _CategoriesPageState extends State<CategoriesPage>
+class CategoriesPageState extends State<CategoriesPage>
     with AutomaticKeepAliveClientMixin {
+  final _techniqueRepository = TechniqueRepository();
   List<Category> _categories = [];
   bool _isLoading = false;
 
@@ -30,10 +32,10 @@ class _CategoriesPageState extends State<CategoriesPage>
     });
 
     try {
-      var list = await MenuRepository().loadCategories();
+      var list = await _techniqueRepository.getAllCategories();
       if (mounted) {
         setState(() {
-          _categories = list.categories;
+          _categories = list;
         });
       }
     } catch (e) {

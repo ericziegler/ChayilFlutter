@@ -12,12 +12,12 @@ import 'package:chayil/domain/services/cache_service.dart';
 import 'package:chayil/domain/services/network_service.dart';
 import 'package:chayil/domain/services/secure_storage_service.dart';
 
-class TechniquesRepository {
+class TechniqueRepository {
   final CacheService _cacheService;
   final NetworkService _network;
   final SecureStorageService _secureStorage;
 
-  TechniquesRepository({
+  TechniqueRepository({
     CacheService? cacheService,
     NetworkService? networkService,
     SecureStorageService? secureStorageService,
@@ -33,12 +33,22 @@ class TechniquesRepository {
     return techniqueList.techniques;
   }
 
+  Future<Technique> getTechnique(String techniqueId) async {
+    final techniques = await getAllTechniques();
+    return techniques.firstWhere((technique) => technique.id == techniqueId);
+  }
+
   Future<List<Category>> getAllCategories() async {
     final jsonStr = await _cacheService
         .loadDecryptedJson('assets/data/categories.json.enc');
     final jsonMap = json.decode(jsonStr);
     final categoryList = CategoryList.fromJson(jsonMap);
     return categoryList.items;
+  }
+
+  Future<Category> getCategory(String categoryId) async {
+    final categories = await getAllCategories();
+    return categories.firstWhere((cat) => cat.id == categoryId);
   }
 
   Future<List<Rank>> getAllRanks() async {
@@ -49,8 +59,12 @@ class TechniquesRepository {
     return rankList.ranks;
   }
 
-  Future<List<TechniquesByCategory>> getTechniquesByCategory(
-      String rankId) async {
+  Future<Rank> getRank(String rankId) async {
+    final ranks = await getAllRanks();
+    return ranks.firstWhere((rank) => rank.id == rankId);
+  }
+
+  Future<TechniquesByCategory> getTechniquesByCategory(String rankId) async {
     final allCategories = await getAllCategories();
     final allTechniques = await getAllTechniques();
 
@@ -72,10 +86,10 @@ class TechniquesRepository {
 
     final model = TechniquesByCategory(categories: categorized);
     model.sortTechniquesAlphabetically();
-    return [model];
+    return model;
   }
 
-  Future<List<TechniquesByRank>> getTechniquesByRank(String categoryId) async {
+  Future<TechniquesByRank> getTechniquesByRank(String categoryId) async {
     final allRanks = await getAllRanks();
     final allTechniques = await getAllTechniques();
 
@@ -100,7 +114,7 @@ class TechniquesRepository {
 
     final model = TechniquesByRank(ranks: ranked);
     model.sortTechniquesAlphabetically();
-    return [model];
+    return model;
   }
 
   Future<List<String>> getTechniqueVideos(String techniqueId) async {

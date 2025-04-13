@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:chayil/domain/repositories/technique_repository.dart';
 import 'package:chayil/domain/models/categories/category.dart';
 import 'package:chayil/domain/models/ranks/rank.dart';
 import 'package:chayil/utilities/components/alert_dialog.dart';
@@ -14,12 +15,14 @@ class CategoryDetailsPage extends StatefulWidget {
       : super(key: key);
 
   @override
-  _CategoryDetailsPageState createState() => _CategoryDetailsPageState();
+  CategoryDetailsPageState createState() => CategoryDetailsPageState();
 }
 
-class _CategoryDetailsPageState extends State<CategoryDetailsPage> {
+class CategoryDetailsPageState extends State<CategoryDetailsPage> {
+  final _techniqueRepository = TechniqueRepository();
   bool _isLoading = false;
   TechniquesByRank _techniquesByRank = TechniquesByRank(ranks: []);
+  final Map<String, Rank> _rankCache = {};
 
   @override
   void initState() {
@@ -34,7 +37,7 @@ class _CategoryDetailsPageState extends State<CategoryDetailsPage> {
 
     try {
       var groups =
-          await TechniqueRepository().loadTechniquesByRank(widget.category.id);
+          await _techniqueRepository.getTechniquesByRank(widget.category.id);
       if (mounted) {
         setState(() {
           _techniquesByRank = groups;
@@ -59,9 +62,6 @@ class _CategoryDetailsPageState extends State<CategoryDetailsPage> {
     for (var rank in data.ranks!) {
       items.add(rank); // Adding rank as a section header
       if (rank.techniques != null) {
-        for (var technique in rank.techniques!) {
-          technique.rank = rank;
-        }
         items.addAll(rank.techniques!); // Adding techniques as rows
       }
     }
@@ -82,21 +82,40 @@ class _CategoryDetailsPageState extends State<CategoryDetailsPage> {
                 final item = items[index];
                 if (item is Rank) {
                   return TechniqueHeaderRow(
-                      text: item.belt,
+                      text: item.name,
                       backgroundHex: item.primaryColor,
                       foregroundHex: item.secondaryColor,
-                      imageUrl: item.image); // section header
+                      imageAsset: item.imageAsset); // section header
                 } else if (item is Technique) {
-                  return TechniqueRow(
+                  final rank = _rankCache[item.rankId];
+
+                  if (rank != null) {
+                    return TechniqueRow(
                       text: item.name,
-                      colorHex: item.rank?.stripeColor ??
-                          item.rank?.primaryColor ??
-                          'FF0000',
+                      colorHex: rank.primaryColor ?? 'FF0000',
                       onTap: () {
                         Navigator.of(context).push(MaterialPageRoute(
                           builder: (context) => TechniquePage(id: item.id),
                         ));
-                      });
+                      },
+                    );
+                  } else {
+                    // Fetch the rank async, then rebuild
+                    _techniqueRepository
+                        .getRank(item.rankId)
+                        .then((fetchedRank) {
+                      if (mounted) {
+                        setState(() {
+                          _rankCache[item.rankId] = fetchedRank;
+                        });
+                      }
+                    });
+
+                    return const ListTile(
+                      title: Text("Loading..."),
+                      dense: true,
+                    );
+                  }
                 }
                 return Container(); // Fallback for unrecognized item types
               },

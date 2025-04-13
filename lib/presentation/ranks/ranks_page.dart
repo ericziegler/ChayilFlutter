@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:chayil/domain/models/ranks/rank.dart';
+import 'package:chayil/domain/repositories/technique_repository.dart';
 import '../../utilities/components/alert_dialog.dart';
 import 'package:chayil/utilities/styles/colors.dart';
 import 'package:chayil/utilities/components/loading_widget.dart';
@@ -10,11 +11,12 @@ class RanksPage extends StatefulWidget {
   const RanksPage({Key? key}) : super(key: key);
 
   @override
-  _RanksPageState createState() => _RanksPageState();
+  RanksPageState createState() => RanksPageState();
 }
 
-class _RanksPageState extends State<RanksPage>
+class RanksPageState extends State<RanksPage>
     with AutomaticKeepAliveClientMixin {
+  final _techniqueRepository = TechniqueRepository();
   List<Rank> _ranks = [];
   bool _isLoading = false;
 
@@ -30,10 +32,10 @@ class _RanksPageState extends State<RanksPage>
     });
 
     try {
-      var list = await MenuRepository().loadRanks();
+      var list = await _techniqueRepository.getAllRanks();
       if (mounted) {
         setState(() {
-          _ranks = list.ranks;
+          _ranks = list;
         });
       }
     } catch (e) {
@@ -61,8 +63,8 @@ class _RanksPageState extends State<RanksPage>
           ListView.separated(
               itemBuilder: (context, index) {
                 return MenuItem(
-                  text: _ranks[index].belt,
-                  imageUrl: _ranks[index].image,
+                  text: _ranks[index].name,
+                  imageAsset: _ranks[index].imageAsset,
                   onTap: () {
                     Navigator.of(context).push(MaterialPageRoute(
                       builder: (context) =>

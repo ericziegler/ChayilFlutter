@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:chayil/domain/repositories/technique_repository.dart';
 import 'package:chayil/domain/models/categories/category.dart';
 import 'package:chayil/domain/models/ranks/rank.dart';
 import 'package:chayil/utilities/components/alert_dialog.dart';
@@ -13,10 +14,11 @@ class RankDetailsPage extends StatefulWidget {
   const RankDetailsPage({Key? key, required this.rank}) : super(key: key);
 
   @override
-  _RankDetailsPageState createState() => _RankDetailsPageState();
+  RankDetailsPageState createState() => RankDetailsPageState();
 }
 
-class _RankDetailsPageState extends State<RankDetailsPage> {
+class RankDetailsPageState extends State<RankDetailsPage> {
+  final _techniqueRepository = TechniqueRepository();
   bool _isLoading = false;
   TechniquesByCategory _techniquesByCategory =
       TechniquesByCategory(categories: []);
@@ -34,7 +36,7 @@ class _RankDetailsPageState extends State<RankDetailsPage> {
 
     try {
       var groups =
-          await TechniqueRepository().loadTechniquesByCategory(widget.rank.id);
+          await _techniqueRepository.getTechniquesByCategory(widget.rank.id);
       if (mounted) {
         setState(() {
           _techniquesByCategory = groups;
@@ -68,7 +70,7 @@ class _RankDetailsPageState extends State<RankDetailsPage> {
     List<Object> items = _generateItems(_techniquesByCategory);
 
     return Scaffold(
-      appBar: AppBar(title: Text(widget.rank.belt)),
+      appBar: AppBar(title: Text(widget.rank.name)),
       body: _isLoading
           ? const Center(child: CircularProgressIndicator())
           : ListView.builder(
@@ -84,8 +86,7 @@ class _RankDetailsPageState extends State<RankDetailsPage> {
                 } else if (item is Technique) {
                   return TechniqueRow(
                       text: item.name,
-                      colorHex:
-                          widget.rank.stripeColor ?? widget.rank.primaryColor,
+                      colorHex: widget.rank.primaryColor,
                       onTap: () {
                         Navigator.of(context).push(MaterialPageRoute(
                           builder: (context) => TechniquePage(id: item.id),

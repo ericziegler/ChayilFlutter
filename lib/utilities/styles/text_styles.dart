@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:chayil/utilities/style/colors.dart';
+import 'colors.dart';
 
 const TextStyle actionButtonTextStyle = TextStyle(
   fontFamily: 'Poppins',
