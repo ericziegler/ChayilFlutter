@@ -1,4 +1,5 @@
 import 'package:json_annotation/json_annotation.dart';
+import 'package:chayil/domain/models/techniques/technique.dart';
 
 part 'rank.g.dart';
 
@@ -11,6 +12,9 @@ class Rank {
   final String secondaryColor;
   final int sortOrder;
 
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  List<Technique>? techniques;
+
   Rank({
     required this.id,
     required this.name,
@@ -18,6 +22,7 @@ class Rank {
     required this.primaryColor,
     required this.secondaryColor,
     required this.sortOrder,
+    this.techniques,
   });
 
   factory Rank.fromJson(Map<String, dynamic> json) => _$RankFromJson(json);
