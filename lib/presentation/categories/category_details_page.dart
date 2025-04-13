@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:chayil/domain/models/category/category.dart';
-import 'package:chayil/domain/models/rank/rank.dart';
+import 'package:chayil/domain/models/categories/category.dart';
+import 'package:chayil/domain/models/ranks/rank.dart';
 import 'package:chayil/utilities/components/alert_dialog.dart';
-import 'package:chayil/domain/repositories/technique_repository.dart';
-import 'package:chayil/domain/models/technique/techniques_by_rank.dart';
-import 'package:chayil/domain/models/technique/technique.dart';
+import 'package:chayil/domain/models/techniques/techniques_by_rank.dart';
+import 'package:chayil/domain/models/techniques/technique.dart';
 import 'package:chayil/utilities/components/technique_header_row.dart';
 import 'package:chayil/utilities/components/technique_row.dart';
-import 'package:chayil/presentation/technique/technique_page.dart';
+import 'package:chayil/presentation/techniques/technique_page.dart';
 
 class CategoryDetailsPage extends StatefulWidget {
   final Category category;

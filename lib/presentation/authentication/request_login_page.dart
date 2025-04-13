@@ -33,17 +33,25 @@ class _RequestLoginPageState extends State<RequestLoginPage> {
     });
 
     try {
-      await _userRepository.requestLoginCode(_email);
-      Navigator.of(context)
-          .push(MaterialPageRoute(builder: (context) => const LoginPage()));
+      await _userRepository.sendVerificationCode(_email);
+
+      if (!mounted) return;
+
+      Navigator.of(context).push(
+        MaterialPageRoute(builder: (context) => const LoginPage()),
+      );
     } catch (e) {
       if (!mounted) return;
-      showErrorAlert(context,
-          "We were unable to generate a code for your email address at this time.");
+      showErrorAlert(
+        context,
+        "We were unable to generate a code for your email address at this time.",
+      );
     } finally {
-      setState(() {
-        _isLoading = false;
-      });
+      if (mounted) {
+        setState(() {
+          _isLoading = false;
+        });
+      }
     }
   }
 

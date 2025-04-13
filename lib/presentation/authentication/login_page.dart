@@ -1,12 +1,13 @@
 import 'package:chayil/utilities/styles/text_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:chayil/domain/repositories/user_repository.dart';
-import 'package:chayil/domain/models/user/user.dart';
+import 'package:chayil/domain/models/users/user.dart';
 import 'package:chayil/utilities/components/action_button.dart';
 import 'package:chayil/utilities/components/app_field.dart';
 import 'package:chayil/utilities/components/alert_dialog.dart';
 import 'package:chayil/utilities/components/loading_widget.dart';
 import 'package:chayil/presentation/main_tab/main_tab_page.dart';
+import 'package:chayil/presentation/authentication/register_device_page.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -34,25 +35,44 @@ class _LoginPageState extends State<LoginPage> {
     });
 
     try {
-      String? email = await UserRepository().loadRequestCodeEmail();
-      if (email != null) {
-        User? loggedInUser = await _userRepository.login(email, _code);
-        if (loggedInUser != null) {
-          Navigator.of(context).pushReplacement(
-              MaterialPageRoute(builder: (context) => const MainTabPage()));
+      bool verificationSuccess = await _userRepository.verifyLoginCode(_code);
+
+      if (!mounted) return; // ✅
+
+      if (verificationSuccess) {
+        User? user = await _userRepository.authenticateUser();
+
+        if (!mounted) return; // ✅
+
+        if (user == null) {
+          showErrorAlert(
+            context,
+            "We were unable to log you in. Please make sure your login code is correct.",
+          );
         } else {
-          showErrorAlert(context,
-              "We were unable to log you in. Please make sure your login code is correct.");
+          if (user.deviceId == null) {
+            Navigator.of(context).pushReplacement(
+              MaterialPageRoute(
+                  builder: (context) => const RegisterDevicePage()),
+            );
+          } else {
+            Navigator.of(context).pushReplacement(
+              MaterialPageRoute(builder: (context) => const MainTabPage()),
+            );
+          }
         }
       } else {
-        if (!mounted) return;
-        showErrorAlert(context,
-            "We couldn't find an email address. Please start over and request a new login code.");
+        showErrorAlert(
+          context,
+          "We were unable to log you in. Please make sure your login code is correct.",
+        );
       }
     } catch (e) {
       if (!mounted) return;
-      showErrorAlert(context,
-          "We were unable to log you in. Please make sure your login code is correct.");
+      showErrorAlert(
+        context,
+        "We were unable to log you in. Please make sure your login code is correct.",
+      );
     } finally {
       setState(() {
         _isLoading = false;

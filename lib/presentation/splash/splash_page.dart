@@ -14,22 +14,13 @@ class SplashPage extends StatefulWidget {
 }
 
 class _SplashPageState extends State<SplashPage> with WidgetsBindingObserver {
-  late final UserRepository _userRepository;
+  final UserRepository _userRepository = UserRepository();
 
   @override
   void initState() {
     super.initState();
     WidgetsBinding.instance.addObserver(this);
-
-    final networkService = NetworkService();
-    final secureStorageService = SecureStorageService();
-
-    _userRepository = UserRepository(
-      networkService: networkService,
-      secureStorageService: secureStorageService,
-    );
-
-    _handleUserFlow(); // Run initially
+    _handleUserFlow();
   }
 
   @override
@@ -46,7 +37,7 @@ class _SplashPageState extends State<SplashPage> with WidgetsBindingObserver {
   }
 
   Future<void> _handleUserFlow() async {
-    final user = await _userRepository.tryAuthenticateCachedUser();
+    final user = await _userRepository.authenticateUser();
 
     if (!mounted) return;
 
