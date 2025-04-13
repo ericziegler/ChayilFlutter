@@ -131,8 +131,9 @@ class UserRepository {
   }
 
   // Register device ID for a user
-  Future<User> registerDevice(String email, String? existingDeviceId) async {
-    final deviceId = existingDeviceId ?? await _getOrCreateDeviceId();
+  Future<User?> registerDevice(String email) async {
+    final deviceId =
+        await _loadCachedDeviceId() ?? await _getOrCreateDeviceId();
 
     final response = await _network.get(
       'user/register_device.php?email=$email&device=$deviceId',

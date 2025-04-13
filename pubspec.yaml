@@ -19,6 +19,7 @@ dependencies:
   smartlogger: ^1.1.4+1
   video_player: ^2.8.2
   device_info_plus: ^9.1.1
+  url_launcher: ^6.2.5
 
 dev_dependencies:
   flutter_test:

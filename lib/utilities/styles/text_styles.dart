@@ -13,10 +13,24 @@ const TextStyle headerTextStyle = TextStyle(
   fontSize: 26,
 );
 
+const TextStyle warningTextStyle = TextStyle(
+  color: accentColor,
+  fontFamily: 'Poppins',
+  fontWeight: FontWeight.w700,
+  fontSize: 24,
+);
+
 const TextStyle paragraphTextStyle = TextStyle(
   fontFamily: 'Poppins',
   fontWeight: FontWeight.w400,
   fontSize: 17,
+);
+
+const TextStyle captionTextStyle = TextStyle(
+  color: secondaryTextColor,
+  fontFamily: 'Poppins',
+  fontWeight: FontWeight.w400,
+  fontSize: 12,
 );
 
 const rankTextStyle = TextStyle(
