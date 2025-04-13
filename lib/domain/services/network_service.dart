@@ -4,7 +4,7 @@ import 'package:http/http.dart' as http;
 class NetworkService {
   NetworkService._privateConstructor();
   static final NetworkService _instance = NetworkService._privateConstructor();
-  factory NetworkService() => instance;
+  factory NetworkService() => _instance;
 
   final _baseUrl = 'https://api.chayil.com/v1';
 
