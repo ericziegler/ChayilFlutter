@@ -21,7 +21,6 @@ class _SplashPageState extends State<SplashPage> with WidgetsBindingObserver {
     super.initState();
     WidgetsBinding.instance.addObserver(this);
 
-    // 👇 Instantiate services directly
     final networkService = NetworkService();
     final secureStorageService = SecureStorageService();
 
