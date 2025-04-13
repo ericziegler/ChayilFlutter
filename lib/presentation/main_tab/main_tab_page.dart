@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:chayil/utilities/styles/colors.dart';
-import 'package:chayil/presentation/ranks/ranks_page.dart';
-import 'package:chayil/presentation/categories/categories_page.dart';
+import 'package:chayil/presentation/rank/ranks_page.dart';
+import 'package:chayil/presentation/category/categories_page.dart';
 import 'package:chayil/domain/repositories/user_repository.dart';
 import 'package:chayil/presentation/authentication/request_login_page.dart';
 

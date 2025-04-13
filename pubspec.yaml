@@ -14,8 +14,11 @@ dependencies:
   cupertino_icons: ^1.0.2
   http: ^0.13.6
   json_annotation: ^4.8.0
-  get_it: ^7.6.4
   flutter_secure_storage: ^9.0.0
+  chewie: ^1.7.4
+  smartlogger: ^1.1.4+1
+  video_player: ^2.8.2
+  device_info_plus: ^9.1.1
 
 dev_dependencies:
   flutter_test:
@@ -46,3 +49,6 @@ flutter:
     - assets/data/ranks.json.enc
     - assets/data/techniques.json.enc
     - assets/images/logo.png
+    - assets/images/fist.png
+    - assets/images/tab-belt.png
+    - assets/images/tab-category.png

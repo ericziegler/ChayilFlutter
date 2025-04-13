@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:chayil/presentation/main_tab/main_tab_page.dart';
 import 'package:chayil/presentation/authentication/request_login_page.dart';
 import 'package:chayil/domain/repositories/user_repository.dart';
-import 'package:chayil/utilities/managers/dependency_container.dart';
 
 class SplashPage extends StatefulWidget {
   const SplashPage({Key? key}) : super(key: key);
@@ -12,34 +11,30 @@ class SplashPage extends StatefulWidget {
 }
 
 class _SplashPageState extends State<SplashPage> {
-  late final UserRepository _userRepository;
-
   @override
   void initState() {
     super.initState();
-    _userRepository = getIt<UserRepository>();
     _checkUser();
   }
 
   void _checkUser() async {
-    final user = await _userRepository.getCachedUser();
-
+    var user = await UserRepository().loadUser();
     if (!mounted) return;
 
     if (user != null) {
       Navigator.of(context).pushReplacement(
-        MaterialPageRoute(builder: (context) => const MainTabPage()),
-      );
+          MaterialPageRoute(builder: (context) => const MainTabPage()));
     } else {
       Navigator.of(context).pushReplacement(
-        MaterialPageRoute(builder: (context) => const RequestLoginPage()),
-      );
+          MaterialPageRoute(builder: (context) => const RequestLoginPage()));
     }
   }
 
+  final _userRepository = UserRepository();
+
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: Center(
         child: SizedBox(
           width: 200,

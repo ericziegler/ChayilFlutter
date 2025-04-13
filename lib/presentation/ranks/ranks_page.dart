@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:chayil/domain/repositories/menu_repository.dart';
-import 'package:chayil/domain/models/ranks/rank.dart';
+import 'package:chayil/domain/models/rank/rank.dart';
 import '../../utilities/components/alert_dialog.dart';
 import 'package:chayil/utilities/styles/colors.dart';
 import 'package:chayil/utilities/components/loading_widget.dart';
 import 'package:chayil/utilities/components/menu_item.dart';
-import 'package:chayil/presentation/ranks/rank_details_page.dart';
+import 'package:chayil/presentation/rank/rank_details_page.dart';
 
 class RanksPage extends StatefulWidget {
   const RanksPage({Key? key}) : super(key: key);

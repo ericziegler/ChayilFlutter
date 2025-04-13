@@ -4,7 +4,7 @@ import 'package:chayil/utilities/components/alert_dialog.dart';
 import 'package:chayil/utilities/components/loading_widget.dart';
 import 'package:chayil/utilities/styles/colors.dart';
 import 'package:chayil/domain/repositories/technique_repository.dart';
-import 'package:chayil/domain/models/techniques/technique.dart';
+import 'package:chayil/domain/models/technique/technique.dart';
 import 'package:chewie/chewie.dart';
 import 'package:video_player/video_player.dart';
 

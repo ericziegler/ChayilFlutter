@@ -6,7 +6,6 @@ import 'package:chayil/utilities/components/app_field.dart';
 import 'package:chayil/utilities/components/alert_dialog.dart';
 import 'package:chayil/utilities/components/loading_widget.dart';
 import 'package:chayil/presentation/authentication/login_page.dart';
-import 'package:chayil/utilities/managers/dependency_container.dart';
 
 class RequestLoginPage extends StatefulWidget {
   const RequestLoginPage({Key? key}) : super(key: key);
@@ -16,8 +15,7 @@ class RequestLoginPage extends StatefulWidget {
 }
 
 class _RequestLoginPageState extends State<RequestLoginPage> {
-  final UserRepository _userRepository = getIt<UserRepository>();
-
+  final _userRepository = UserRepository();
   String _email = '';
   bool _isLoading = false;
   bool _isActionEnabled = false;
@@ -35,11 +33,9 @@ class _RequestLoginPageState extends State<RequestLoginPage> {
     });
 
     try {
-      await _userRepository.sendVerificationCode(_email);
-      if (!mounted) return;
-      Navigator.of(context).push(
-        MaterialPageRoute(builder: (context) => const LoginPage()),
-      );
+      await _userRepository.requestLoginCode(_email);
+      Navigator.of(context)
+          .push(MaterialPageRoute(builder: (context) => const LoginPage()));
     } catch (e) {
       if (!mounted) return;
       showErrorAlert(context,
@@ -53,21 +49,22 @@ class _RequestLoginPageState extends State<RequestLoginPage> {
 
   @override
   Widget build(BuildContext context) {
+    // Calculate the height to offset the content
     final double screenHeight = MediaQuery.of(context).size.height;
-    final double offsetHeight = screenHeight * 0.05;
+    final double offsetHeight = screenHeight * 0.05; // 1/4 of the screen height
 
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Welcome'),
-      ),
-      body: Stack(
-        children: [
+        appBar: AppBar(
+          title: const Text('Welcome'),
+        ),
+        body: Stack(children: [
           SingleChildScrollView(
             keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
             child: Center(
               child: SizedBox(
                 width: 300,
                 child: Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
                   children: <Widget>[
                     SizedBox(height: offsetHeight),
                     SizedBox(
@@ -75,7 +72,10 @@ class _RequestLoginPageState extends State<RequestLoginPage> {
                       child: Image.asset('assets/images/logo.png'),
                     ),
                     const SizedBox(height: 20),
-                    const Text('Request Login Code', style: headerTextStyle),
+                    const Text(
+                      'Request Login Code',
+                      style: headerTextStyle,
+                    ),
                     const SizedBox(height: 20),
                     const Text(
                       'Enter your email address to have an access code sent to you.',
@@ -88,7 +88,7 @@ class _RequestLoginPageState extends State<RequestLoginPage> {
                       onChanged: (value) {
                         setState(() {
                           _email = value;
-                          _isActionEnabled = _email.isNotEmpty;
+                          _isActionEnabled = (_email.isNotEmpty);
                         });
                       },
                     ),
@@ -98,15 +98,13 @@ class _RequestLoginPageState extends State<RequestLoginPage> {
                       onPressed: _isActionEnabled
                           ? () => _onRequestLoginPressed(context)
                           : null,
-                    ),
+                    )
                   ],
                 ),
               ),
             ),
           ),
           if (_isLoading) const LoadingWidget(),
-        ],
-      ),
-    );
+        ]));
   }
 }

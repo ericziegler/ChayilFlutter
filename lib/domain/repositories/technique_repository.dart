@@ -1,138 +1,68 @@
-import 'package:smartlogger/smartlogger.dart';
-import 'package:chayil/domain/services/api/api_service.dart';
-import 'package:chayil/domain/models/technique/techniques_by_category.dart';
-import 'package:chayil/domain/models/technique/techniques_by_rank.dart';
-import 'package:chayil/domain/models/technique/technique.dart';
-import 'package:chayil/domain/models/api_response/api_response.dart';
-import 'package:chayil/domain/models/user/user.dart';
-import 'package:chayil/domain/repositories/user_repository.dart';
+import 'dart:convert';
+import 'package:chayil/domain/models/techniques/technique.dart';
+import 'package:chayil/domain/models/ranks/rank.dart';
+import 'package:chayil/domain/models/categories/category.dart';
+import 'package:chayil/domain/models/techniques/techniques_by_category.dart';
+import 'package:chayil/domain/models/techniques/techniques_by_rank.dart';
+import 'package:chayil/domain/services/cache_service.dart';
 
-class TechniqueRepository {
-  // Singleton
+class TechniquesRepository {
+  final CacheService _cacheService;
 
-  static final TechniqueRepository _techniqueRepository =
-      TechniqueRepository._internal();
+  TechniquesRepository(this._cacheService);
 
-  factory TechniqueRepository() {
-    return _techniqueRepository;
+  Future<List<Technique>> getAllTechniques() async {
+    final jsonString = await _cacheService
+        .loadDecryptedJson('assets/data/techniques.json.enc');
+    final List<dynamic> jsonList = json.decode(jsonString);
+    return jsonList.map((item) => Technique.fromJson(item)).toList();
   }
 
-  TechniqueRepository._internal();
-
-  // Techniques by Category
-
-  Future<TechniquesByCategory> loadTechniquesByCategory(String rankId) async {
-    User? user = await UserRepository().loadUser();
-    if (user == null || user.email.isEmpty || user.token.isEmpty) {
-      throw Exception('expired_session');
-    }
-    var params = {'email': user.email, 'token': user.token, 'rankId': rankId};
-    var url = buildUrl('technique/list.php', params);
-    try {
-      ApiResponse<TechniquesByCategory?> response =
-          await getModelData(url, TechniquesByCategory.fromJson);
-      if (response.status == "success") {
-        // Check if data is not null
-        if (response.data != null) {
-          // Success!
-          TechniquesByCategory result = response.data!;
-          result.sortTechniquesAlphabetically();
-          return result;
-        } else {
-          throw Exception('No data available.');
-        }
-      } else if (response.status == 'expired_session') {
-        UserRepository().removeUser();
-        throw Exception(response.status);
-      } else {
-        // Handle error based on the status
-        Log.d("Bad Status: ${response.status}");
-        throw Exception(response.status);
-      }
-    } catch (e) {
-      // Handle exceptions
-      Log.d(e.toString());
-      rethrow;
-    }
+  Future<List<Category>> getAllCategories() async {
+    final jsonString = await _cacheService
+        .loadDecryptedJson('assets/data/categories.json.enc');
+    final List<dynamic> jsonList = json.decode(jsonString);
+    return jsonList.map((item) => Category.fromJson(item)).toList();
   }
 
-  // Techniques By Rank
-
-  Future<TechniquesByRank> loadTechniquesByRank(String categoryId) async {
-    User? user = await UserRepository().loadUser();
-    if (user == null || user.email.isEmpty || user.token.isEmpty) {
-      throw Exception('expired_session');
-    }
-    var params = {
-      'email': user.email,
-      'token': user.token,
-      'categoryId': categoryId
-    };
-    var url = buildUrl('technique/list.php', params);
-    try {
-      ApiResponse<TechniquesByRank?> response =
-          await getModelData(url, TechniquesByRank.fromJson);
-      if (response.status == "success") {
-        // Check if data is not null
-        if (response.data != null) {
-          // Success!
-          TechniquesByRank result = response.data!;
-          result.sortTechniquesAlphabetically();
-          return result;
-        } else {
-          throw Exception('No data available.');
-        }
-      } else if (response.status == 'expired_session') {
-        UserRepository().removeUser();
-        throw Exception(response.status);
-      } else {
-        // Handle error based on the status
-        Log.d("Bad Status: ${response.status}");
-        throw Exception(response.status);
-      }
-    } catch (e) {
-      // Handle exceptions
-      Log.d(e.toString());
-      rethrow;
-    }
+  Future<List<Rank>> getAllRanks() async {
+    final jsonString =
+        await _cacheService.loadDecryptedJson('assets/data/ranks.json.enc');
+    final List<dynamic> jsonList = json.decode(jsonString);
+    return jsonList.map((item) => Rank.fromJson(item)).toList();
   }
 
-  // Technique Details
+  Future<List<TechniquesByCategory>> getTechniquesByCategory(
+      String rankId) async {
+    final techniques = await getAllTechniques();
+    final categories = await getAllCategories();
 
-  Future<Technique> loadTechnique(String id) async {
-    User? user = await UserRepository().loadUser();
-    if (user == null || user.email.isEmpty || user.token.isEmpty) {
-      throw Exception('expired_session');
-    }
-    var params = {
-      'email': user.email,
-      'token': user.token,
-      'id': id,
-    };
-    var url = buildUrl('technique/details.php', params);
-    try {
-      ApiResponse<Technique?> response =
-          await getModelData(url, Technique.fromJson);
-      if (response.status == "success") {
-        // Check if data is not null
-        if (response.data != null) {
-          // Success!
-          return response.data!;
-        } else {
-          throw Exception('No data available.');
-        }
-      } else if (response.status == 'expired_session') {
-        UserRepository().removeUser();
-        throw Exception(response.status);
-      } else {
-        // Handle error based on the status
-        Log.d("Bad Status: ${response.status}");
-        throw Exception(response.status);
-      }
-    } catch (e) {
-      // Handle exceptions
-      Log.d(e.toString());
-      rethrow;
-    }
+    return categories
+        .map((category) {
+          final filteredTechniques = techniques
+              .where((t) => t.categoryId == category.id && t.rankId == rankId)
+              .toList()
+            ..sort((a, b) => a.sortOrder.compareTo(b.sortOrder));
+          return TechniquesByCategory(
+              category: category, techniques: filteredTechniques);
+        })
+        .where((group) => group.techniques.isNotEmpty)
+        .toList();
+  }
+
+  Future<List<TechniquesByRank>> getTechniquesByRank(String categoryId) async {
+    final techniques = await getAllTechniques();
+    final ranks = await getAllRanks();
+
+    return ranks
+        .map((rank) {
+          final filteredTechniques = techniques
+              .where((t) => t.rankId == rank.id && t.categoryId == categoryId)
+              .toList()
+            ..sort((a, b) => a.sortOrder.compareTo(b.sortOrder));
+          return TechniquesByRank(rank: rank, techniques: filteredTechniques);
+        })
+        .where((group) => group.techniques.isNotEmpty)
+        .toList();
   }
 }

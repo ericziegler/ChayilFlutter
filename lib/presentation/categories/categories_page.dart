@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:chayil/domain/models/categories/category.dart';
+import 'package:chayil/domain/models/category/category.dart';
 import 'package:chayil/domain/repositories/menu_repository.dart';
 import 'package:chayil/utilities/components/alert_dialog.dart';
 import 'package:chayil/utilities/components/loading_widget.dart';
 import 'package:chayil/utilities/components/menu_item.dart';
 import 'package:chayil/utilities/styles/colors.dart';
-import 'package:chayil/presentation/categories/category_details_page.dart';
+import 'package:chayil/presentation/category/category_details_page.dart';
 
 class CategoriesPage extends StatefulWidget {
   const CategoriesPage({Key? key}) : super(key: key);
