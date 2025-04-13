@@ -6,11 +6,17 @@ part 'rank.g.dart';
 class Rank {
   final String id;
   final String name;
+  final String imageAsset;
+  final String primaryColor;
+  final String secondaryColor;
   final int sortOrder;
 
   Rank({
     required this.id,
     required this.name,
+    required this.imageAsset,
+    required this.primaryColor,
+    required this.secondaryColor,
     required this.sortOrder,
   });
 
