@@ -33,6 +33,17 @@ class UserRepository {
     return user;
   }
 
+  Future<User?> tryAuthenticateCachedUser() async {
+    final user = await getCachedUser();
+    if (user == null || user.deviceId == null) return null;
+
+    return await authenticate(user.email, user.deviceId!);
+  }
+
+  bool needsDeviceRegistration(User user) {
+    return user.deviceId == null;
+  }
+
   // Send a verification code to the user's email
   Future<void> sendVerificationCode(String email) async {
     await _network.get('user/send_verification.php?email=$email');
