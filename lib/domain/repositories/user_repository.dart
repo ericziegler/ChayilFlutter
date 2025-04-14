@@ -51,6 +51,7 @@ class UserRepository {
   }
 
   Future<void> clearCachedUser() async {
+    await _secureStorage.delete(_authEmailKey);
     await _secureStorage.delete(_userEmailKey);
     await _secureStorage.delete(_userDeviceIdKey);
     await _secureStorage.delete(_userStatusKey);
@@ -164,5 +165,11 @@ class UserRepository {
 
   String _generateRandomId() {
     return DateTime.now().millisecondsSinceEpoch.toString();
+  }
+
+  Future<void> clearDevice() async {
+    if (Platform.isIOS) {
+      await _secureStorage.delete(_authDeviceIdKey);
+    }
   }
 }

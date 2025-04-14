@@ -26,6 +26,12 @@ const TextStyle paragraphTextStyle = TextStyle(
   fontSize: 17,
 );
 
+const TextStyle boldParagraphTextStyle = TextStyle(
+  fontFamily: 'Poppins',
+  fontWeight: FontWeight.w700,
+  fontSize: 17,
+);
+
 const TextStyle captionTextStyle = TextStyle(
   color: secondaryTextColor,
   fontFamily: 'Poppins',

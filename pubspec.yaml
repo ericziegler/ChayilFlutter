@@ -54,6 +54,7 @@ flutter:
     - assets/images/fist.png
     - assets/images/tab-belt.png
     - assets/images/tab-category.png
+    - assets/images/tab-fist.png
     - assets/images/white_belt.png
     - assets/images/yellow_belt.png
     - assets/images/orange_belt.png

@@ -56,8 +56,9 @@ class _LoginPageState extends State<LoginPage> {
                   builder: (context) => const RegisterDevicePage()),
             );
           } else {
-            Navigator.of(context).pushReplacement(
+            Navigator.of(context).pushAndRemoveUntil(
               MaterialPageRoute(builder: (context) => const MainTabPage()),
+              (Route<dynamic> route) => false,
             );
           }
         }

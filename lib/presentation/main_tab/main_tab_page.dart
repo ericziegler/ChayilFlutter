@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:chayil/utilities/styles/colors.dart';
 import 'package:chayil/presentation/ranks/ranks_page.dart';
 import 'package:chayil/presentation/categories/categories_page.dart';
+import 'package:chayil/presentation/more/more_page.dart';
 
 class MainTabPage extends StatefulWidget {
   const MainTabPage({Key? key}) : super(key: key);
@@ -14,6 +15,7 @@ class _MainTabPageState extends State<MainTabPage> {
   int _currentIndex = 0;
 
   final List<GlobalKey<NavigatorState>> _navigatorKeys = [
+    GlobalKey<NavigatorState>(),
     GlobalKey<NavigatorState>(),
     GlobalKey<NavigatorState>(),
   ];
@@ -46,6 +48,12 @@ class _MainTabPageState extends State<MainTabPage> {
               builder: (context) => const CategoriesPage(),
             ),
           ),
+          Navigator(
+            key: _navigatorKeys[2],
+            onGenerateRoute: (settings) => MaterialPageRoute(
+              builder: (context) => const MorePage(),
+            ),
+          ),
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
@@ -59,6 +67,10 @@ class _MainTabPageState extends State<MainTabPage> {
           BottomNavigationBarItem(
             icon: ImageIcon(AssetImage('assets/images/tab-category.png')),
             label: 'Categories',
+          ),
+          BottomNavigationBarItem(
+            icon: ImageIcon(AssetImage('assets/images/tab-fist.png')),
+            label: 'More',
           ),
         ],
         selectedItemColor: accentColor,
