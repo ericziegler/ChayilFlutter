@@ -1,29 +1,27 @@
 import 'dart:convert';
 
 import 'package:chayil/domain/models/categories/category.dart';
-import 'package:chayil/domain/models/categories/category_list.dart';
 import 'package:chayil/domain/models/ranks/rank.dart';
-import 'package:chayil/domain/models/ranks/rank_list.dart';
 import 'package:chayil/domain/models/techniques/technique.dart';
-import 'package:chayil/domain/models/techniques/technique_list.dart';
 import 'package:chayil/domain/models/techniques/techniques_by_category.dart';
 import 'package:chayil/domain/models/techniques/techniques_by_rank.dart';
 import 'package:chayil/domain/services/cache_service.dart';
 import 'package:chayil/domain/services/network_service.dart';
-import 'package:chayil/domain/services/secure_storage_service.dart';
+import 'package:chayil/domain/repositories/user_repository.dart';
+import 'package:chayil/domain/models/users/user.dart';
 
 class TechniqueRepository {
   final CacheService _cacheService;
   final NetworkService _network;
-  final SecureStorageService _secureStorage;
+  final UserRepository _userRepository;
 
   TechniqueRepository({
     CacheService? cacheService,
     NetworkService? networkService,
-    SecureStorageService? secureStorageService,
+    UserRepository? userRepository,
   })  : _cacheService = cacheService ?? CacheService(),
         _network = networkService ?? NetworkService(),
-        _secureStorage = secureStorageService ?? SecureStorageService();
+        _userRepository = userRepository ?? UserRepository();
 
   Future<List<Technique>> getAllTechniques() async {
     final jsonStr = await _cacheService.loadJson('assets/data/techniques.json');
@@ -113,15 +111,13 @@ class TechniqueRepository {
   }
 
   Future<List<String>> getTechniqueVideos(String techniqueId) async {
-    final email = await _secureStorage.read('user_email');
-    final deviceId = await _secureStorage.read('user_device');
-
-    if (email == null || deviceId == null) {
+    User? user = await _userRepository.loadCachedUser();
+    if (user == null || user.deviceId == null) {
       throw Exception("User credentials not found in secure storage.");
     }
 
     final response = await _network.get(
-      'video/video.php?email=$email&device=$deviceId&techniqueId=$techniqueId',
+      'video/video.php?email=${user.email}&device=${user.deviceId}&techniqueId=$techniqueId',
     );
 
     final urls = response['urls'];

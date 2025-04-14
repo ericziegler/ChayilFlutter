@@ -1,11 +1,13 @@
 import 'package:chayil/utilities/styles/text_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:chayil/domain/repositories/technique_repository.dart';
+import 'package:chayil/domain/repositories/user_repository.dart';
 import 'package:chayil/utilities/components/alert_dialog.dart';
 import 'package:chayil/utilities/components/loading_widget.dart';
 import 'package:chayil/utilities/styles/colors.dart';
 import 'package:chayil/domain/models/techniques/technique.dart';
 import 'package:chayil/domain/models/ranks/rank.dart';
+import 'package:chayil/domain/models/users/user.dart';
 import 'package:chewie/chewie.dart';
 import 'package:video_player/video_player.dart';
 
@@ -19,6 +21,8 @@ class TechniquePage extends StatefulWidget {
 
 class TechniquePageState extends State<TechniquePage> {
   final _techniqueRepository = TechniqueRepository();
+  final _userRepository = UserRepository();
+  UserRole _userRole = UserRole.student;
   bool _isLoading = false;
   static const _horizontalInset = 16.0;
   static const _verticalPadding = 16.0;
@@ -66,19 +70,27 @@ class TechniquePageState extends State<TechniquePage> {
       _isLoading = true;
     });
 
+    await _loadUserRole();
+
     try {
       final loadedTechnique =
           await _techniqueRepository.getTechnique(widget.id);
       final loadedRank =
           await _techniqueRepository.getRank(loadedTechnique.rankId);
-      final videos = await _techniqueRepository.getTechniqueVideos(widget.id);
+
+      List<String> videos = [];
+      if (_userRole != UserRole.student) {
+        videos = await _techniqueRepository.getTechniqueVideos(widget.id);
+      }
 
       if (mounted) {
         setState(() {
           _technique = loadedTechnique;
           _rank = loadedRank;
-          _videoUrls = videos;
-          _loadVideos();
+          if (_userRole != UserRole.student) {
+            _videoUrls = videos;
+            _loadVideos();
+          }
         });
       }
     } catch (e) {
@@ -92,6 +104,13 @@ class TechniquePageState extends State<TechniquePage> {
           _isLoading = false;
         });
       }
+    }
+  }
+
+  Future<void> _loadUserRole() async {
+    User? user = await _userRepository.loadCachedUser();
+    if (user != null) {
+      _userRole = user.role;
     }
   }
 

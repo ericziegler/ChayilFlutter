@@ -32,7 +32,7 @@ class TechniqueHeaderRow extends StatelessWidget {
       child: Row(
         children: [
           Container(
-            padding: const EdgeInsets.all(2),
+            padding: EdgeInsets.all(imageAsset != null ? 2 : 0),
             width: imageSize,
             height: imageSize,
             decoration: BoxDecoration(
