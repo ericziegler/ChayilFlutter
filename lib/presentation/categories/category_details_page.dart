@@ -94,7 +94,7 @@ class CategoryDetailsPageState extends State<CategoryDetailsPage> {
                   if (rank != null) {
                     return TechniqueRow(
                       text: item.name,
-                      colorHex: rank.primaryColor ?? 'FF0000',
+                      colorHex: rank.primaryColor,
                       stripeHex: rank.stripeColor,
                       onTap: () {
                         Navigator.of(context).push(MaterialPageRoute(
