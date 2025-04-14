@@ -7,7 +7,7 @@
         </intent>
     </queries>
     <application
-        android:label="chayil"
+        android:label="Chayil"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
