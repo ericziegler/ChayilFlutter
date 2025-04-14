@@ -177,12 +177,14 @@ class TechniquePageState extends State<TechniquePage> {
                   const SizedBox(height: _verticalPadding),
                   const Divider(color: separatorColor),
                 ],
-                if (_technique.formattedAdvancedNotes() != null &&
+                if ((_userRole == UserRole.admin ||
+                        _userRole == UserRole.school) &&
+                    _technique.formattedAdvancedNotes() != null &&
                     _technique.formattedAdvancedNotes()!.isNotEmpty) ...[
                   const SizedBox(height: _verticalPadding),
                   const Padding(
                     padding: EdgeInsets.symmetric(horizontal: _horizontalInset),
-                    child: Text('INSTRUCTOR NOTES', style: techniqueRankStyle),
+                    child: Text('ADVANCED NOTES', style: techniqueRankStyle),
                   ),
                   const SizedBox(height: 10),
                   Padding(
