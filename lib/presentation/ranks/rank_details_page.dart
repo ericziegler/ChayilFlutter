@@ -87,6 +87,7 @@ class RankDetailsPageState extends State<RankDetailsPage> {
                   return TechniqueRow(
                       text: item.name,
                       colorHex: widget.rank.primaryColor,
+                      stripeHex: widget.rank.stripeColor,
                       onTap: () {
                         Navigator.of(context).push(MaterialPageRoute(
                           builder: (context) => TechniquePage(id: item.id),

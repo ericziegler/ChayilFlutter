@@ -94,6 +94,7 @@ class CategoryDetailsPageState extends State<CategoryDetailsPage> {
                     return TechniqueRow(
                       text: item.name,
                       colorHex: rank.primaryColor ?? 'FF0000',
+                      stripeHex: rank.stripeColor,
                       onTap: () {
                         Navigator.of(context).push(MaterialPageRoute(
                           builder: (context) => TechniquePage(id: item.id),

@@ -10,6 +10,7 @@ class Rank {
   final String imageAsset;
   final String primaryColor;
   final String secondaryColor;
+  final String stripeColor;
   final int sortOrder;
 
   @JsonKey(includeFromJson: false, includeToJson: false)
@@ -21,6 +22,7 @@ class Rank {
     required this.imageAsset,
     required this.primaryColor,
     required this.secondaryColor,
+    required this.stripeColor,
     required this.sortOrder,
     this.techniques,
   });

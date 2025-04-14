@@ -24,3 +24,4 @@ const Color toolbarColor = Color(0xFF1E1E1E);
 const Color toolbarIconColor = Color(0xFFB4BBBF);
 const Color separatorColor = Color(0xFF383838);
 const Color accentColor = Color(0xFFE50825);
+const Color neutralColor = Color(0xFFF0F0F0);

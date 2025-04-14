@@ -100,6 +100,7 @@ class TechniqueRepository {
             imageAsset: rank.imageAsset,
             primaryColor: rank.primaryColor,
             secondaryColor: rank.secondaryColor,
+            stripeColor: rank.stripeColor,
             sortOrder: rank.sortOrder,
           )..techniques = matchingTechniques;
         })

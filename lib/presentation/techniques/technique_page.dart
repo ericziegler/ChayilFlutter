@@ -36,6 +36,7 @@ class TechniquePageState extends State<TechniquePage> {
       imageAsset: '',
       primaryColor: '',
       secondaryColor: '',
+      stripeColor: '',
       sortOrder: 0);
   List<String> _videoUrls = [];
 

@@ -5,12 +5,14 @@ import 'package:chayil/utilities/styles/text_styles.dart';
 class TechniqueRow extends StatelessWidget {
   final String text;
   final String colorHex;
+  final String stripeHex;
   final VoidCallback? onTap;
 
   const TechniqueRow({
     Key? key,
     required this.text,
     required this.colorHex,
+    required this.stripeHex,
     this.onTap,
   }) : super(key: key);
 
@@ -33,7 +35,7 @@ class TechniqueRow extends StatelessWidget {
                   bottomLeft: Radius.circular(16),
                 ),
                 child: Container(
-                  color: HexColor.fromHex(colorHex),
+                  color: HexColor.fromHex(stripeHex),
                   width: 12,
                 ),
               ),

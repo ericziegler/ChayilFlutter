@@ -12,6 +12,7 @@ Rank _$RankFromJson(Map<String, dynamic> json) => Rank(
       imageAsset: json['imageAsset'] as String,
       primaryColor: json['primaryColor'] as String,
       secondaryColor: json['secondaryColor'] as String,
+      stripeColor: json['stripeColor'] as String,
       sortOrder: (json['sortOrder'] as num).toInt(),
     );
 
@@ -21,5 +22,6 @@ Map<String, dynamic> _$RankToJson(Rank instance) => <String, dynamic>{
       'imageAsset': instance.imageAsset,
       'primaryColor': instance.primaryColor,
       'secondaryColor': instance.secondaryColor,
+      'stripeColor': instance.stripeColor,
       'sortOrder': instance.sortOrder,
     };

@@ -30,18 +30,17 @@ class TechniqueHeaderRow extends StatelessWidget {
       child: Row(
         children: [
           Container(
+            padding: const EdgeInsets.all(2),
             width: imageSize,
             height: imageSize,
             decoration: const BoxDecoration(
-              color: Colors.white,
+              color: neutralColor,
               shape: BoxShape.circle,
             ),
-            child: Center(
+            child: ClipOval(
               child: Image.asset(
-                imageAsset != null ? imageAsset! : 'assets/images/fist.png',
-                width: imageSize,
-                height: imageSize,
-                fit: BoxFit.contain,
+                imageAsset ?? 'assets/images/fist.png',
+                fit: BoxFit.scaleDown,
               ),
             ),
           ),
