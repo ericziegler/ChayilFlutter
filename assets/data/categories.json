@@ -1,0 +1,82 @@
+[
+    {
+        "id": "hand-stance",
+        "name": "Hand/Stance",
+        "sortOrder": 0
+    },
+    {
+        "id": "kicking",
+        "name": "Kicking",
+        "sortOrder": 1
+    },
+    {
+        "id": "breakfalls",
+        "name": "Breakfalls",
+        "sortOrder": 2
+    },
+    {
+        "id": "throws-sweeps",
+        "name": "Throws/Sweeps",
+        "sortOrder": 3
+    },
+    {
+        "id": "chokes",
+        "name": "Chokes",
+        "sortOrder": 4
+    },
+    {
+        "id": "pressure-points",
+        "name": "Pressure Points",
+        "sortOrder": 5
+    },
+    {
+        "id": "locks",
+        "name": "Locks",
+        "sortOrder": 6
+    },
+    {
+        "id": "takedowns",
+        "name": "Takedowns",
+        "sortOrder": 7
+    },
+    {
+        "id": "three-step-sparring",
+        "name": "Three Step Sparring",
+        "sortOrder": 8
+    },
+    {
+        "id": "ground-fighting",
+        "name": "Ground Fighting",
+        "sortOrder": 9
+    },
+    {
+        "id": "theory",
+        "name": "Theory",
+        "sortOrder": 10
+    },
+    {
+        "id": "forms",
+        "name": "Forms",
+        "sortOrder": 11
+    },
+    {
+        "id": "weapons",
+        "name": "Weapons",
+        "sortOrder": 12
+    },
+    {
+        "id": "self-defense",
+        "name": "Self Defense",
+        "sortOrder": 13
+    },
+    {
+        "id": "breaking",
+        "name": "Breaking",
+        "sortOrder": 14
+    },
+    {
+        "id": "written-test",
+        "name": "Written Test",
+        "sortOrder": 15
+    }
+]

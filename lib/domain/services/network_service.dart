@@ -20,9 +20,6 @@ class NetworkService {
       },
     );
 
-// TODO: EZ - Remove
-    print('🔗 Final URL: $updatedUri');
-
     final response = await http.get(updatedUri, headers: headers);
     return _handleResponse(response);
   }

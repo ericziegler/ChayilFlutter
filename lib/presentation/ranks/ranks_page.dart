@@ -64,7 +64,7 @@ class RanksPageState extends State<RanksPage>
               itemBuilder: (context, index) {
                 return MenuItem(
                   text: _ranks[index].name,
-                  imageAsset: _ranks[index].imageAsset,
+                  imageAsset: 'assets/images/${_ranks[index].imageAsset}',
                   onTap: () {
                     Navigator.of(context).push(MaterialPageRoute(
                       builder: (context) =>

@@ -27,7 +27,7 @@ class MenuItem extends StatelessWidget {
           children: [
             if (imageAsset != null) ...[
               Image.asset(
-                imageAsset ?? 'assets/images/fist.png',
+                imageAsset!,
                 width: imageSize,
                 height: imageSize,
                 fit: BoxFit.contain,

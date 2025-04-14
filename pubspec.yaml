@@ -46,10 +46,22 @@ flutter:
         - asset: assets/fonts/Poppins-SemiBold.ttf
           weight: 600
   assets:
-    - assets/data/categories.json.enc
-    - assets/data/ranks.json.enc
-    - assets/data/techniques.json.enc
+    - assets/data/categories.json
+    - assets/data/ranks.json
+    - assets/data/techniques.json
     - assets/images/logo.png
     - assets/images/fist.png
     - assets/images/tab-belt.png
     - assets/images/tab-category.png
+    - assets/images/white_belt.png
+    - assets/images/yellow_belt.png
+    - assets/images/orange_belt.png
+    - assets/images/green_belt.png
+    - assets/images/blue_belt.png
+    - assets/images/purple_belt.png
+    - assets/images/brown_belt.png
+    - assets/images/red_belt.png
+    - assets/images/red_black_belt.png
+    - assets/images/black_white_belt.png
+    - assets/images/1st_dan_belt.png
+    - assets/images/2nd_dan_belt.png

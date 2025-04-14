@@ -74,8 +74,6 @@ class UserRepository {
   }
 
   Future<User?> _authenticate(String email, String deviceId) async {
-    // TODO: EZ - Remove
-    print('👉 Authenticating with email=$email & device=$deviceId');
     final response = await _network.get(
       'user/authenticate.php?email=$email&device=$deviceId',
     );
@@ -138,6 +136,10 @@ class UserRepository {
     final response = await _network.get(
       'user/register_device.php?email=$email&device=$deviceId',
     );
+
+    if (response == null || response['email'] == null) {
+      return null;
+    }
 
     final user = User.fromJson(response);
     await _secureStorage.write(_authDeviceIdKey, deviceId);

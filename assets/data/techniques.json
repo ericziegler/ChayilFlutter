@@ -1,0 +1,2558 @@
+[
+    {
+        "id": "white-hand-stance-4x-basic-hkd-blocks",
+        "name": "4x Basic HKD Blocks",
+        "details": "1. Same side: in-to-out\n2. Same side: out-to-in\n3. Opposite side: in-to-out\n4. Opposite side: out-to-in",
+        "advancedNotes": "",
+        "rankId": "white",
+        "categoryId": "hand-stance",
+        "sortOrder": 0
+    },
+    {
+        "id": "white-hand-stance-cage-stance",
+        "name": "Cage Stance",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "white",
+        "categoryId": "hand-stance",
+        "sortOrder": 1
+    },
+    {
+        "id": "white-hand-stance-jab-reverse-punch",
+        "name": "Fighting Stance w/ Jab; Reverse Punch",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "white",
+        "categoryId": "hand-stance",
+        "sortOrder": 2
+    },
+    {
+        "id": "white-hand-stance-hammerfist",
+        "name": "Hammerfist (4 Variations + Reverse Hammerfist)",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "white",
+        "categoryId": "hand-stance",
+        "sortOrder": 3
+    },
+    {
+        "id": "white-hand-stance-horse-stance-punches",
+        "name": "Ride Horse Stance w/ Punches",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "white",
+        "categoryId": "hand-stance",
+        "sortOrder": 4
+    },
+    {
+        "id": "white-hand-stance-standard-grip",
+        "name": "Standard Grip: 3-Finger Grip",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "white",
+        "categoryId": "hand-stance",
+        "sortOrder": 5
+    },
+    {
+        "id": "white-kicking-front-round-side",
+        "name": "From Fighting Stance: Front; Round; Side",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "white",
+        "categoryId": "kicking",
+        "sortOrder": 6
+    },
+    {
+        "id": "white-kicking-crescent",
+        "name": "From Ready Stance: Crescent",
+        "details": "1. In-to-out\n2. Out-to-in",
+        "advancedNotes": "",
+        "rankId": "white",
+        "categoryId": "kicking",
+        "sortOrder": 7
+    },
+    {
+        "id": "white-breakfalls-lying-sitting",
+        "name": "From the Lying/Sitting Position: Back; Left/Right Side",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "white",
+        "categoryId": "breakfalls",
+        "sortOrder": 8
+    },
+    {
+        "id": "white-throws-sweeps-koshi-guruma-fit-in",
+        "name": "Koshi Guruma (Hip Wheel) - Fit In Only",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "white",
+        "categoryId": "throws-sweeps",
+        "sortOrder": 9
+    },
+    {
+        "id": "white-chokes-rear-naked",
+        "name": "Rear Naked Choke",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "white",
+        "categoryId": "chokes",
+        "sortOrder": 10
+    },
+    {
+        "id": "white-pressure-points-neck",
+        "name": "Neck Pressure Points",
+        "details": "- Behind jaw\n- Carotid\n- Larynx",
+        "advancedNotes": "- Behind jaw = SI-17\n- Larynx = CO-22\n\nBonus: sternocleidomastoid\nLarynx - rest fingers on bone and then move up half an inch",
+        "rankId": "white",
+        "categoryId": "pressure-points",
+        "sortOrder": 11
+    },
+    {
+        "id": "white-locks-single-finger",
+        "name": "Single Finger Locks",
+        "details": "Total of two:\n- Single finger lock #1 (pinky finger)\n- Single finger lock #2 (thumb)",
+        "advancedNotes": "Bonus locks:\n- Thumb crunch\n- Handshake/plus sign",
+        "rankId": "white",
+        "categoryId": "locks",
+        "sortOrder": 12
+    },
+    {
+        "id": "white-takedowns-finger-locks",
+        "name": "Finger Lock Takedowns",
+        "details": "- 2x takedowns using finger locks\n\n(Uke must at least go to knee)",
+        "advancedNotes": "",
+        "rankId": "white",
+        "categoryId": "takedowns",
+        "sortOrder": 13
+    },
+    {
+        "id": "white-three-step-sparring-total-of-four",
+        "name": "Three Step Sparring: Total of Four",
+        "details": "- One using each of the four Basic HKD Blocks, followed by a counter",
+        "advancedNotes": "",
+        "rankId": "white",
+        "categoryId": "three-step-sparring",
+        "sortOrder": 14
+    },
+    {
+        "id": "white-ground-fighting-cage-stomp",
+        "name": "Cage & Stomp Kick",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "white",
+        "categoryId": "ground-fighting",
+        "sortOrder": 15
+    },
+    {
+        "id": "white-theory-8-points-unbalance",
+        "name": "8 Points of Unbalance",
+        "details": "Asterisk\n- North\n- Northeast\n- Northwest\n- South\n- Southeast\n- Southwest\n- East\n- West",
+        "advancedNotes": "",
+        "rankId": "white",
+        "categoryId": "theory",
+        "sortOrder": 16
+    },
+    {
+        "id": "white-theory-joint-locking-body-mechanics",
+        "name": "Joint Locking: Definition; Intro to Body Mechanics",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "white",
+        "categoryId": "theory",
+        "sortOrder": 17
+    },
+    {
+        "id": "white-theory-pressure-points-definition",
+        "name": "Pressure Points: Definition",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "white",
+        "categoryId": "theory",
+        "sortOrder": 18
+    },
+    {
+        "id": "white-theory-three-parts-throw",
+        "name": "Three Parts to a Throw",
+        "details": "1. Break balance\n2. Fit in\n3. Throw",
+        "advancedNotes": "",
+        "rankId": "white",
+        "categoryId": "theory",
+        "sortOrder": 19
+    },
+    {
+        "id": "white-weapons-dan-bong-grips",
+        "name": "Short Stick/Dan Bong Grips",
+        "details": "- Open/closed grip\n- Transition between open/closed grips",
+        "advancedNotes": "",
+        "rankId": "white",
+        "categoryId": "weapons",
+        "sortOrder": 20
+    },
+    {
+        "id": "white-weapons-dan-bong-striking",
+        "name": "Short Stick/Dan Bong Striking",
+        "details": "- Basic striking techniques (open grip asterisk)",
+        "advancedNotes": "",
+        "rankId": "white",
+        "categoryId": "weapons",
+        "sortOrder": 21
+    },
+    {
+        "id": "white-self-defense-two-hand-choke-escape",
+        "name": "Escape from a Two-Handed Choke from the Front",
+        "details": "- Two fingers to throat",
+        "advancedNotes": "",
+        "rankId": "white",
+        "categoryId": "self-defense",
+        "sortOrder": 22
+    },
+    {
+        "id": "white-self-defense-opposite-wrist-grab",
+        "name": "Opposite Side Wrist Grab Defense",
+        "details": "1. Escape\n2. Escape & counter",
+        "advancedNotes": "",
+        "rankId": "white",
+        "categoryId": "self-defense",
+        "sortOrder": 23
+    },
+    {
+        "id": "white-self-defense-same-side-wrist-grab",
+        "name": "Same Side Wrist Grab Defense",
+        "details": "1. Escape\n2. Escape & counter",
+        "advancedNotes": "",
+        "rankId": "white",
+        "categoryId": "self-defense",
+        "sortOrder": 24
+    },
+    {
+        "id": "white-self-defense-two-hands-grabbing-wrist",
+        "name": "Two Hands Grabbing One Wrist Defense",
+        "details": "1. Escape\n2. Escape & counter",
+        "advancedNotes": "",
+        "rankId": "white",
+        "categoryId": "self-defense",
+        "sortOrder": 25
+    },
+    {
+        "id": "white-breaking-hammerfist",
+        "name": "Hammerfist Break (Rising - Strike w/ Thumb Side",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "white",
+        "categoryId": "breaking",
+        "sortOrder": 26
+    },
+    {
+        "id": "white-written-test-3-parts-to-throw",
+        "name": "3 Parts to a Throw",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "white",
+        "categoryId": "written-test",
+        "sortOrder": 27
+    },
+    {
+        "id": "white-written-test-8-points-unbalance",
+        "name": "8 Points of Unbalance",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "white",
+        "categoryId": "written-test",
+        "sortOrder": 28
+    },
+    {
+        "id": "white-written-test-define-pressure-points",
+        "name": "Define Pressure Points and How They Are Used",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "white",
+        "categoryId": "written-test",
+        "sortOrder": 29
+    },
+    {
+        "id": "white-written-test-theory-joint-locking",
+        "name": "Theory of Joint Locking",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "white",
+        "categoryId": "written-test",
+        "sortOrder": 30
+    },
+    {
+        "id": "yellow-hand-stance-back-front",
+        "name": "Back Stance; Front Stance",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "yellow",
+        "categoryId": "hand-stance",
+        "sortOrder": 0
+    },
+    {
+        "id": "yellow-hand-stance-slaps",
+        "name": "Front Slap; Back Slap",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "yellow",
+        "categoryId": "hand-stance",
+        "sortOrder": 1
+    },
+    {
+        "id": "yellow-hand-stance-open-hand-blocks",
+        "name": "Low Block; Upper Block (All Open Hand Techniques)",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "yellow",
+        "categoryId": "hand-stance",
+        "sortOrder": 2
+    },
+    {
+        "id": "yellow-kicking-back",
+        "name": "Back Kick",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "yellow",
+        "categoryId": "kicking",
+        "sortOrder": 3
+    },
+    {
+        "id": "yellow-breakfalls-squatting",
+        "name": "From the Squatting Position: Back; Left/Right Side",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "yellow",
+        "categoryId": "breakfalls",
+        "sortOrder": 4
+    },
+    {
+        "id": "yellow-throws-sweeps-koshi-guruma",
+        "name": "Koshi Guruma (Hip Wheel)",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "yellow",
+        "categoryId": "throws-sweeps",
+        "sortOrder": 5
+    },
+    {
+        "id": "yellow-chokes-cross-arm",
+        "name": "Cross Arm Choke",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "yellow",
+        "categoryId": "chokes",
+        "sortOrder": 6
+    },
+    {
+        "id": "yellow-pressure-points-arm",
+        "name": "Arm Pressure Points",
+        "details": "1. Top of mountain\n2. Wrist (4 fingers up from hand)\n3. Bicep",
+        "advancedNotes": "- Top of mountain = LI-10\n- 4 fingers = HT-4\n- Bicep = UE-9\n\nTop of the mountain tip - rest hand on forearm, let arm fall naturally until fingers catch\n\nThe either side of the bicep points are LI-13 and HT-2\n\nFourth finger squeeze or hit",
+        "rankId": "yellow",
+        "categoryId": "pressure-points",
+        "sortOrder": 7
+    },
+    {
+        "id": "yellow-locks-wrist-1",
+        "name": "Wrist Lock #1",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "yellow",
+        "categoryId": "locks",
+        "sortOrder": 8
+    },
+    {
+        "id": "yellow-locks-wrist-2",
+        "name": "Wrist Lock #2",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "yellow",
+        "categoryId": "locks",
+        "sortOrder": 9
+    },
+    {
+        "id": "yellow-locks-wrist-from-grabs",
+        "name": "Wrist Locks from Various Grabs",
+        "details": "Technique must be done from a standard grab as well as from other grabs. Student must determine how to apply from various grabs.",
+        "advancedNotes": "",
+        "rankId": "yellow",
+        "categoryId": "locks",
+        "sortOrder": 10
+    },
+    {
+        "id": "yellow-takedowns-wrist",
+        "name": "Wrist Lock Takedowns",
+        "details": "Uke is attacking with a straight grab:\n- 1x takedown with wrist lock #1\n- 1x takedown with wrist lock #2\n\n(Uke must at least go to knee)",
+        "advancedNotes": "",
+        "rankId": "yellow",
+        "categoryId": "takedowns",
+        "sortOrder": 11
+    },
+    {
+        "id": "yellow-three-step-sparring-total-of-three",
+        "name": "Three Step Sparring: Total of Three New",
+        "details": "- One must end with a hand strike counter\n- One with a kick counter\n- One with a takedown",
+        "advancedNotes": "",
+        "rankId": "yellow",
+        "categoryId": "three-step-sparring",
+        "sortOrder": 12
+    },
+    {
+        "id": "yellow-ground-fighting-cage-kick-roll",
+        "name": "Body Cage w/ Kick, Roll",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "yellow",
+        "categoryId": "ground-fighting",
+        "sortOrder": 13
+    },
+    {
+        "id": "yellow-theory-3-parts-to-kick",
+        "name": "3 Parts to a Kick",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "yellow",
+        "categoryId": "theory",
+        "sortOrder": 14
+    },
+    {
+        "id": "yellow-theory-proper-body-position-throw",
+        "name": "Proper Body Position for a Throw",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "yellow",
+        "categoryId": "theory",
+        "sortOrder": 15
+    },
+    {
+        "id": "yellow-theory-when-pressure-points-preferred",
+        "name": "When Are Pressure Points Preferred?",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "yellow",
+        "categoryId": "theory",
+        "sortOrder": 16
+    },
+    {
+        "id": "yellow-forms-1st-form-1st-half",
+        "name": "1st Form, 1st Half",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "yellow",
+        "categoryId": "forms",
+        "sortOrder": 17
+    },
+    {
+        "id": "yellow-weapons-dan-bong-locks",
+        "name": "Dan Bong: Three Basic Locks",
+        "details": "Three basic locks or joint manipulations using the stick.",
+        "advancedNotes": "",
+        "rankId": "yellow",
+        "categoryId": "weapons",
+        "sortOrder": 18
+    },
+    {
+        "id": "yellow-self-defense-bear-hug-front-free",
+        "name": "Bear Hug from the Front, Arms Free Defense",
+        "details": "1. Escape\n2. Escape & counter",
+        "advancedNotes": "",
+        "rankId": "yellow",
+        "categoryId": "self-defense",
+        "sortOrder": 19
+    },
+    {
+        "id": "yellow-self-defense-bear-hug-front-pinned",
+        "name": "",
+        "details": "1. Escape\n2. Escape & counter",
+        "advancedNotes": "Bear Hug from the Front, Arms Pinned Defense",
+        "rankId": "yellow",
+        "categoryId": "self-defense",
+        "sortOrder": 20
+    },
+    {
+        "id": "yellow-self-defense-bear-hug-rear-free",
+        "name": "Bear Hug from the Rear, Arms Free Defense",
+        "details": "1. Escape\n2. Escape & counter",
+        "advancedNotes": "",
+        "rankId": "yellow",
+        "categoryId": "self-defense",
+        "sortOrder": 21
+    },
+    {
+        "id": "yellow-self-defense-bear-hug-rear-pinned",
+        "name": "Bear Hug from the Rear, Arms Pinned Defense",
+        "details": "1. Escape\n2. Escape & counter",
+        "advancedNotes": "",
+        "rankId": "yellow",
+        "categoryId": "self-defense",
+        "sortOrder": 22
+    },
+    {
+        "id": "yellow-breaking-side-kick",
+        "name": "Side Kick Break (to Knee)",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "yellow",
+        "categoryId": "breaking",
+        "sortOrder": 23
+    },
+    {
+        "id": "yellow-written-test-3-parts-kick",
+        "name": "3 Parts to a Kick",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "yellow",
+        "categoryId": "written-test",
+        "sortOrder": 24
+    },
+    {
+        "id": "yellow-written-test-pressure-points-preferred",
+        "name": "Explain When Pressure Points Are Preferred",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "yellow",
+        "categoryId": "written-test",
+        "sortOrder": 25
+    },
+    {
+        "id": "yellow-written-test-throw-body-position",
+        "name": "Proper Body Position for a Throw",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "yellow",
+        "categoryId": "written-test",
+        "sortOrder": 26
+    },
+    {
+        "id": "orange-hand-stance-knifehand",
+        "name": "Knifehand",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "orange",
+        "categoryId": "hand-stance",
+        "sortOrder": 0
+    },
+    {
+        "id": "orange-hand-stance-palm-heel-strike",
+        "name": "Palm Heel Strike",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "orange",
+        "categoryId": "hand-stance",
+        "sortOrder": 1
+    },
+    {
+        "id": "orange-hand-stance-parry-block",
+        "name": "Parry Block",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "orange",
+        "categoryId": "hand-stance",
+        "sortOrder": 2
+    },
+    {
+        "id": "orange-hand-stance-side-block",
+        "name": "",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "orange",
+        "categoryId": "hand-stance",
+        "sortOrder": 3
+    },
+    {
+        "id": "orange-kicking-front-hook",
+        "name": "Front Hook Kick",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "orange",
+        "categoryId": "kicking",
+        "sortOrder": 4
+    },
+    {
+        "id": "orange-kicking-front-leg-kicks",
+        "name": "Front Leg Kicks",
+        "details": "- Front\n- Side\n- Round\n- Crescent\n- Hook",
+        "advancedNotes": "",
+        "rankId": "orange",
+        "categoryId": "kicking",
+        "sortOrder": 5
+    },
+    {
+        "id": "orange-breakfalls-kneeling-rolling",
+        "name": "Kneeling: Front Rolling Breakfall",
+        "details": "Ends in a break fall position, not returning to standing.",
+        "advancedNotes": "",
+        "rankId": "orange",
+        "categoryId": "breakfalls",
+        "sortOrder": 6
+    },
+    {
+        "id": "orange-breakfalls-squatting-front",
+        "name": "Squatting: Front",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "orange",
+        "categoryId": "breakfalls",
+        "sortOrder": 7
+    },
+    {
+        "id": "orange-breakfalls-standing-back-left-right",
+        "name": "Standing: Back; Left/Right Side",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "orange",
+        "categoryId": "breakfalls",
+        "sortOrder": 8
+    },
+    {
+        "id": "orange-throws-sweeps-o-goshi",
+        "name": "O Goshi (Major Hip Throw)",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "orange",
+        "categoryId": "throws-sweeps",
+        "sortOrder": 9
+    },
+    {
+        "id": "orange-throws-sweeps-o-soto-gari",
+        "name": "O Soto Gari (Major Outer Reaping)",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "orange",
+        "categoryId": "throws-sweeps",
+        "sortOrder": 10
+    },
+    {
+        "id": "orange-chokes-rear-sliding-lapel",
+        "name": "Rear Sliding Lapel Choke",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "orange",
+        "categoryId": "chokes",
+        "sortOrder": 11
+    },
+    {
+        "id": "orange-pressure-points-face",
+        "name": "Face Pressure Points",
+        "details": "1. Chin\n2. Middle of Cheek\n3. Jaw Hinge",
+        "advancedNotes": "Plus sign on face\nChin - thumb on chin\nMiddle of cheek and jaw hinge - support head with one hand or arm",
+        "rankId": "orange",
+        "categoryId": "pressure-points",
+        "sortOrder": 12
+    },
+    {
+        "id": "orange-locks-arm-bar-wrist-elbow",
+        "name": "Arm Bar: Wrist to Elbow",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "orange",
+        "categoryId": "locks",
+        "sortOrder": 13
+    },
+    {
+        "id": "orange-locks-shoulder-lock-wrist-elbow-shoulder",
+        "name": "Shoulder Lock: Wrist to Elbow to Shoulder",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "orange",
+        "categoryId": "locks",
+        "sortOrder": 14
+    },
+    {
+        "id": "orange-locks-middle-chest",
+        "name": "Middle Chest Grab Wrist Locks",
+        "details": "1. 2 hand twist\n2. Hand wrist lock with shoulder turn",
+        "advancedNotes": "#1: Arm should be vertical; pin to chest. Can strike top of mountain to get arm vertical. Hand on top should be same side as hand partner is grabbing.\n#2: Pickle jar; wringing the towel",
+        "rankId": "orange",
+        "categoryId": "locks",
+        "sortOrder": 15
+    },
+    {
+        "id": "orange-takedowns-wrist-elbow-shoulder",
+        "name": "Wrist/Elbow/Shoulder Lock Takedowns",
+        "details": "Uke is attacking with a straight grab:\n- 2x takedowns from wrist locks\n- 1x takedown from arm bar\n- 1x takedown from shoulder lock\n\n (Uke must at least go to knee)",
+        "advancedNotes": "",
+        "rankId": "orange",
+        "categoryId": "takedowns",
+        "sortOrder": 16
+    },
+    {
+        "id": "orange-three-step-sparring-three-new",
+        "name": "Three Step Sparring: Total of Three New",
+        "details": "- One must end with a throw\n- One with a takedown\n- One with a kick",
+        "advancedNotes": "",
+        "rankId": "orange",
+        "categoryId": "three-step-sparring",
+        "sortOrder": 17
+    },
+    {
+        "id": "orange-ground-fighting-hold-down-1",
+        "name": "Hold Down #1 (Kesa Gatame)",
+        "details": "Scarf hold down",
+        "advancedNotes": "",
+        "rankId": "orange",
+        "categoryId": "ground-fighting",
+        "sortOrder": 18
+    },
+    {
+        "id": "orange-ground-fighting-hold-down-2",
+        "name": "Hold Down #2 (Kata Gatame)",
+        "details": "Shoulder hold down",
+        "advancedNotes": "",
+        "rankId": "orange",
+        "categoryId": "ground-fighting",
+        "sortOrder": 19
+    },
+    {
+        "id": "orange-ground-fighting-hold-down-1-2-transition",
+        "name": "1 Transition Technique Between the Two Hold Downs",
+        "details": "Between hold down #1 (kesa gatame) and hold down #2 (kata gatame)",
+        "advancedNotes": "",
+        "rankId": "orange",
+        "categoryId": "ground-fighting",
+        "sortOrder": 20
+    },
+    {
+        "id": "orange-theory-hold-down-pinning",
+        "name": "Hold down/pinning",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "orange",
+        "categoryId": "theory",
+        "sortOrder": 21
+    },
+    {
+        "id": "orange-forms-1st-half-form-1",
+        "name": "1st Half of Form #1",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "orange",
+        "categoryId": "forms",
+        "sortOrder": 22
+    },
+    {
+        "id": "orange-weapons-dan-bong-vs-unarmed",
+        "name": "Dan Bong: 5 Techniques Against Unarmed Attacker",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "orange",
+        "categoryId": "weapons",
+        "sortOrder": 23
+    },
+    {
+        "id": "orange-self-defense-1-hand-grabbing-each-wrist",
+        "name": "1 Hand Grabbing Each Wrist Defense",
+        "details": "1. Pain based counter\n2. Disabling/lethal counter",
+        "advancedNotes": "",
+        "rankId": "orange",
+        "categoryId": "self-defense",
+        "sortOrder": 24
+    },
+    {
+        "id": "orange-self-defense-headlock",
+        "name": "Headlock Defense",
+        "details": "1. Pain based counter\n2. Disabling/lethal counter",
+        "advancedNotes": "",
+        "rankId": "orange",
+        "categoryId": "self-defense",
+        "sortOrder": 25
+    },
+    {
+        "id": "orange-breaking-palm-strike",
+        "name": "Palm Strike Break",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "orange",
+        "categoryId": "breaking",
+        "sortOrder": 26
+    },
+    {
+        "id": "orange-written-test-8-points-unbalance",
+        "name": "8 Points of Unbalance",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "orange",
+        "categoryId": "written-test",
+        "sortOrder": 27
+    },
+    {
+        "id": "orange-written-test-meaning-of-hapkido",
+        "name": "Meaning of Hapkido",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "orange",
+        "categoryId": "written-test",
+        "sortOrder": 28
+    },
+    {
+        "id": "orange-written-test-preventing-choke-from-behind",
+        "name": "Preventing a Choke from Behind",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "orange",
+        "categoryId": "written-test",
+        "sortOrder": 29
+    },
+    {
+        "id": "green-hand-stance-closed-fist-blocks",
+        "name": "Closed Fist Blocks",
+        "details": "- Low\n- Middle\n - Upper",
+        "advancedNotes": "",
+        "rankId": "green",
+        "categoryId": "hand-stance",
+        "sortOrder": 0
+    },
+    {
+        "id": "green-hand-stance-elbow-strikes",
+        "name": "Elbow Strikes",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "green",
+        "categoryId": "hand-stance",
+        "sortOrder": 1
+    },
+    {
+        "id": "green-kicking-knee-strikes",
+        "name": "Knee Strikes",
+        "details": "- Front\n- Side/roundhouse",
+        "advancedNotes": "",
+        "rankId": "green",
+        "categoryId": "kicking",
+        "sortOrder": 2
+    },
+    {
+        "id": "green-kicking-skipping-crescent",
+        "name": "Skipping Crescent",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "green",
+        "categoryId": "kicking",
+        "sortOrder": 3
+    },
+    {
+        "id": "green-kicking-stomp-kick",
+        "name": "Stomp Kick",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "green",
+        "categoryId": "kicking",
+        "sortOrder": 4
+    },
+    {
+        "id": "green-breakfalls-squatting-side-back",
+        "name": "Squatting: Side and Back Breakfalls",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "green",
+        "categoryId": "breakfalls",
+        "sortOrder": 5
+    },
+    {
+        "id": "green-breakfalls-standing-front-rolling-front",
+        "name": "Standing: Front; Rolling Front Breakfall",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "green",
+        "categoryId": "breakfalls",
+        "sortOrder": 6
+    },
+    {
+        "id": "green-throws-sweeps-o-uchi-gari",
+        "name": "O Uchi Gari (Major Inner Reaping)",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "green",
+        "categoryId": "throws-sweeps",
+        "sortOrder": 7
+    },
+    {
+        "id": "green-throws-sweeps-wrist-throw-1",
+        "name": "Wrist Throw #1",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "green",
+        "categoryId": "throws-sweeps",
+        "sortOrder": 8
+    },
+    {
+        "id": "green-chokes-single-wing",
+        "name": "Single Wing Choke",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "green",
+        "categoryId": "chokes",
+        "sortOrder": 9
+    },
+    {
+        "id": "green-pressure-points-hand",
+        "name": "Hand Pressure Points",
+        "details": "1. Fingertips - sides\n2. Nail beds\n3. Catcher's mitt",
+        "advancedNotes": "- Catcher's Mitt = LI-4",
+        "rankId": "green",
+        "categoryId": "pressure-points",
+        "sortOrder": 10
+    },
+    {
+        "id": "green-locks-elbow",
+        "name": "Elbow Locks",
+        "details": "1. From shoulder grab - over\n2. From shoulder grab - under",
+        "advancedNotes": "",
+        "rankId": "green",
+        "categoryId": "locks",
+        "sortOrder": 11
+    },
+    {
+        "id": "green-locks-shoulder",
+        "name": "Shoulder Locks",
+        "details": "1. Over the top\n2. Underneath",
+        "advancedNotes": "",
+        "rankId": "green",
+        "categoryId": "locks",
+        "sortOrder": 12
+    },
+    {
+        "id": "green-takedowns-elbow-shoulder-lock",
+        "name": "Elbow/Shoulder Lock Takedowns",
+        "details": "Uke is attacking with any grab:\n- 1x takedown with elbow lock\n- 1x takedown with shoulder lock\n\n(Uke must at least go to knee)",
+        "advancedNotes": "",
+        "rankId": "green",
+        "categoryId": "takedowns",
+        "sortOrder": 13
+    },
+    {
+        "id": "green-three-step-sparring-two new",
+        "name": "Three Step Sparring: Total of Two New",
+        "details": "- One must end with a joint lock\n- One must end with a controlling technique, leaving partner standing",
+        "advancedNotes": "",
+        "rankId": "green",
+        "categoryId": "three-step-sparring",
+        "sortOrder": 14
+    },
+    {
+        "id": "green-ground-fighting-hold-down-3",
+        "name": "Hold Down #3 (Yoko Shiho Gatame)",
+        "details": "Side 4-corner hold",
+        "advancedNotes": "",
+        "rankId": "green",
+        "categoryId": "ground-fighting",
+        "sortOrder": 15
+    },
+    {
+        "id": "green-ground-fighting-hold-down-4",
+        "name": "Hold Down #4 (Kame Shiho Gatame",
+        "details": "Upper 4-corner holding",
+        "advancedNotes": "",
+        "rankId": "green",
+        "categoryId": "ground-fighting",
+        "sortOrder": 16
+    },
+    {
+        "id": "green-ground-fighting-hold-down-3-4-transition",
+        "name": "1 Transition Technique Between the Two Hold Downs",
+        "details": "Transition between hold down #3 (yoko shiho gatame) and hold down #4 (kame shiho gatame)",
+        "advancedNotes": "",
+        "rankId": "green",
+        "categoryId": "ground-fighting",
+        "sortOrder": 17
+    },
+    {
+        "id": "green-theory-ki",
+        "name": "Ki Theory",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "green",
+        "categoryId": "theory",
+        "sortOrder": 18
+    },
+    {
+        "id": "green-theory-water",
+        "name": "Water Theory",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "green",
+        "categoryId": "theory",
+        "sortOrder": 19
+    },
+    {
+        "id": "green-forms-form-1",
+        "name": "All of Form #1",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "green",
+        "categoryId": "forms",
+        "sortOrder": 20
+    },
+    {
+        "id": "green-weapons-dan-bong-spar-one-attacker",
+        "name": "Dan Bong: Semi-Spar Against One Attacker",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "green",
+        "categoryId": "weapons",
+        "sortOrder": 21
+    },
+    {
+        "id": "green-weapons-knife-basic-cuts",
+        "name": "Knife: Basic Cuts",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "green",
+        "categoryId": "weapons",
+        "sortOrder": 22
+    },
+    {
+        "id": "green-weapons-knife-asterisk-transitions",
+        "name": "Knife: Asterisk & Transitions",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "green",
+        "categoryId": "weapons",
+        "sortOrder": 23
+    },
+    {
+        "id": "green-weapons-knife-basic-blocks",
+        "name": "Knife: Basic Blocks",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "green",
+        "categoryId": "weapons",
+        "sortOrder": 24
+    },
+    {
+        "id": "green-self-defense-shoulder-grab-front",
+        "name": "One Shoulder Grab from Front Defense",
+        "details": "1. Pain-based counter\n2. Disabling/lethal counter",
+        "advancedNotes": "",
+        "rankId": "green",
+        "categoryId": "self-defense",
+        "sortOrder": 25
+    },
+    {
+        "id": "green-self-defense-one-shoulder-grab-behind",
+        "name": "One Shoulder Grab from Behind Defense",
+        "details": "1. Pain-based counter\n2. Disabling/lethal counter",
+        "advancedNotes": "",
+        "rankId": "green",
+        "categoryId": "self-defense",
+        "sortOrder": 26
+    },
+    {
+        "id": "green-self-defense-two-hands-behind",
+        "name": "Two Hands from Behind Defense",
+        "details": "1. Pain-based counter\n2. Disabling/lethal counter",
+        "advancedNotes": "",
+        "rankId": "green",
+        "categoryId": "self-defense",
+        "sortOrder": 27
+    },
+    {
+        "id": "green-breaking-stomp-kick",
+        "name": "Stomp Kick Break (to Hip)",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "green",
+        "categoryId": "breaking",
+        "sortOrder": 28
+    },
+    {
+        "id": "green-written-test-circular-linear-defense",
+        "name": "Circular vs. Linear Defense",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "green",
+        "categoryId": "written-test",
+        "sortOrder": 29
+    },
+    {
+        "id": "green-written-test-ki",
+        "name": "Theory of Ki",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "green",
+        "categoryId": "written-test",
+        "sortOrder": 30
+    },
+    {
+        "id": "green-written-test-water",
+        "name": "Water Theory",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "green",
+        "categoryId": "written-test",
+        "sortOrder": 31
+    },
+    {
+        "id": "blue-hand-stance-backfist",
+        "name": "Backfist",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "blue",
+        "categoryId": "hand-stance",
+        "sortOrder": 0
+    },
+    {
+        "id": "blue-hand-stance-pressure-point-punch",
+        "name": "Pressure Point Punch",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "blue",
+        "categoryId": "hand-stance",
+        "sortOrder": 1
+    },
+    {
+        "id": "blue-hand-stance-ridgehand",
+        "name": "Ridgehand",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "blue",
+        "categoryId": "hand-stance",
+        "sortOrder": 2
+    },
+    {
+        "id": "blue-kicking-axe-back-hook-hkd",
+        "name": "Axe; Back Hook; HKD Front",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "blue",
+        "categoryId": "kicking",
+        "sortOrder": 3
+    },
+    {
+        "id": "blue-breakfalls-jump-front-to-breakfall",
+        "name": "Jump Front to Breakfall",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "blue",
+        "categoryId": "breakfalls",
+        "sortOrder": 4
+    },
+    {
+        "id": "blue-breakfalls-rolling-front-to-feet",
+        "name": "Rolling Front to Feet",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "blue",
+        "categoryId": "breakfalls",
+        "sortOrder": 5
+    },
+    {
+        "id": "blue-throws-sweeps-ko-uchi-gari",
+        "name": "Ko Uchi Gari (Minor Inner Reaping)",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "blue",
+        "categoryId": "throws-sweeps",
+        "sortOrder": 6
+    },
+    {
+        "id": "blue-throws-sweeps-wrist-throw-2",
+        "name": "Wrist Throw #2",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "blue",
+        "categoryId": "throws-sweeps",
+        "sortOrder": 7
+    },
+    {
+        "id": "blue-chokes-guillotine",
+        "name": "Guillotine Choke",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "blue",
+        "categoryId": "chokes",
+        "sortOrder": 8
+    },
+    {
+        "id": "blue-pressure-points-foot",
+        "name": "Foot Pressure Points",
+        "details": "1. Peak\n2. Nail bed\n3. Directly above ankle (apply with ridge hand)",
+        "advancedNotes": "- Peak = GB-41\n- Directly above ankle = SP-6",
+        "rankId": "blue",
+        "categoryId": "pressure-points",
+        "sortOrder": 9
+    },
+    {
+        "id": "blue-locks-toe",
+        "name": "Toe Locks",
+        "details": "1. Big toe\n2. Second toe\n3. Pinky toe",
+        "advancedNotes": "",
+        "rankId": "blue",
+        "categoryId": "locks",
+        "sortOrder": 10
+    },
+    {
+        "id": "blue-takedowns-any-joint-lock",
+        "name": "Any Joint Lock Takedown",
+        "details": "Uke is using any attack (punchm grab, etc.):\n- 3x takedowns using any joint lock\n\n(Uke must at least go to knee)",
+        "advancedNotes": "",
+        "rankId": "blue",
+        "categoryId": "takedowns",
+        "sortOrder": 11
+    },
+    {
+        "id": "blue-three-step-sparring-three-new",
+        "name": "Three Step Sparring: Three New",
+        "details": "- One with hand technique to finish the opponent\n- One with a takedown and a finishing technique\n- One with a throw and a finishing technique",
+        "advancedNotes": "",
+        "rankId": "blue",
+        "categoryId": "three-step-sparring",
+        "sortOrder": 12
+    },
+    {
+        "id": "blue-ground-fighting-hold-down-5",
+        "name": "Hold Down #5 (Tate Shiho Gatame)",
+        "details": "Top 4-corner holding/the mount",
+        "advancedNotes": "",
+        "rankId": "blue",
+        "categoryId": "ground-fighting",
+        "sortOrder": 13
+    },
+    {
+        "id": "blue-ground-fighting-moving-elbow-lock",
+        "name": "Moving Elbow Lock",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "blue",
+        "categoryId": "ground-fighting",
+        "sortOrder": 14
+    },
+    {
+        "id": "blue-theory-breaking-balance",
+        "name": "Breaking Balance",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "blue",
+        "categoryId": "theory",
+        "sortOrder": 15
+    },
+    {
+        "id": "blue-forms-form-1-bunkai",
+        "name": "Form #1 - Bunkai",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "blue",
+        "categoryId": "forms",
+        "sortOrder": 16
+    },
+    {
+        "id": "blue-weapons-dan-bong-spar-two-armed",
+        "name": "Dan Bong: Free Spar Against 2x Armed Attackers",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "blue",
+        "categoryId": "weapons",
+        "sortOrder": 17
+    },
+    {
+        "id": "blue-weapons-knife-transition-forms",
+        "name": "Knife: 2x Transition Forms",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "blue",
+        "categoryId": "weapons",
+        "sortOrder": 18
+    },
+    {
+        "id": "blue-weapons-knife-defend-unarmed-attacker",
+        "name": "Knife: Defend Against Unarmed Attacker (Any Attacks)",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "blue",
+        "categoryId": "weapons",
+        "sortOrder": 19
+    },
+    {
+        "id": "blue-self-defense-single-lapel-grab",
+        "name": "Single Lapel Grab Defense",
+        "details": "1. Pain based counter\n2. Disabling/lethal counter",
+        "advancedNotes": "",
+        "rankId": "blue",
+        "categoryId": "self-defense",
+        "sortOrder": 20
+    },
+    {
+        "id": "blue-self-defense-double-lapel-grab",
+        "name": "Double Lapel Grab Defense",
+        "details": "1. Pain based counter\n2. Disabling/lethal counter",
+        "advancedNotes": "",
+        "rankId": "blue",
+        "categoryId": "self-defense",
+        "sortOrder": 21
+    },
+    {
+        "id": "blue-self-defense-twisted-grip",
+        "name": "Twisted Grip Defense",
+        "details": "1. Pain based counter\n2. Disabling/lethal counter",
+        "advancedNotes": "",
+        "rankId": "blue",
+        "categoryId": "self-defense",
+        "sortOrder": 22
+    },
+    {
+        "id": "blue-breaking-knifehand",
+        "name": "Knifehand Break (to Neck)",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "blue",
+        "categoryId": "breaking",
+        "sortOrder": 23
+    },
+    {
+        "id": "blue-written-test-breaking-balance-from-push",
+        "name": "Breaking Balance of Someone Pushing You",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "blue",
+        "categoryId": "written-test",
+        "sortOrder": 24
+    },
+    {
+        "id": "blue-written-test-components-of-rolling-fall",
+        "name": "Components of a Rolling Fall",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "blue",
+        "categoryId": "written-test",
+        "sortOrder": 25
+    },
+    {
+        "id": "purple-hand-stance-reverse-ridgehand",
+        "name": "Reverse Ridgehand",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "purple",
+        "categoryId": "hand-stance",
+        "sortOrder": 0
+    },
+    {
+        "id": "purple-hand-stance-spearhand",
+        "name": "Spearhand",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "purple",
+        "categoryId": "hand-stance",
+        "sortOrder": 1
+    },
+    {
+        "id": "purple-kicking-twist-kick",
+        "name": "Twist Kick",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "purple",
+        "categoryId": "kicking",
+        "sortOrder": 2
+    },
+    {
+        "id": "purple-kicking-wheel-low-kick",
+        "name": "Wheel (Low) Kick",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "purple",
+        "categoryId": "kicking",
+        "sortOrder": 3
+    },
+    {
+        "id": "purple-breakfalls-diving-front",
+        "name": "Diving Front",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "purple",
+        "categoryId": "breakfalls",
+        "sortOrder": 4
+    },
+    {
+        "id": "purple-throws-sweeps-ippon-seionage",
+        "name": "Ippon Seionage (One-Arm Shoulder Throw)",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "purple",
+        "categoryId": "throws-sweeps",
+        "sortOrder": 5
+    },
+    {
+        "id": "purple-throws-sweeps-tai-ot-oshi",
+        "name": "Tai Ot Oshi",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "purple",
+        "categoryId": "throws-sweeps",
+        "sortOrder": 6
+    },
+    {
+        "id": "purple-chokes-two-finger-squeeze",
+        "name": "Two-Finger Squeeze Choke",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "purple",
+        "categoryId": "chokes",
+        "sortOrder": 7
+    },
+    {
+        "id": "purple-pressure-points-leg",
+        "name": "Leg Pressure Points",
+        "details": "1. Middle of leg\n2. Common perennial\n3. Inside of thigh",
+        "advancedNotes": "",
+        "rankId": "purple",
+        "categoryId": "pressure-points",
+        "sortOrder": 8
+    },
+    {
+        "id": "purple-locks-ankle",
+        "name": "Ankle Locks",
+        "details": "1. Toe heel lock\n2. Folding ankle lock\n3. Turning ankle lock",
+        "advancedNotes": "",
+        "rankId": "purple",
+        "categoryId": "locks",
+        "sortOrder": 9
+    },
+    {
+        "id": "purple-takedowns-any-joint-lock",
+        "name": "Any Joint Lock Takedown",
+        "details": "Uke is using any attack (punch, grab, etc.):\n- 3x takedowns using any joint lock\n\n(Uke must at least go to knee)",
+        "advancedNotes": "",
+        "rankId": "purple",
+        "categoryId": "takedowns",
+        "sortOrder": 10
+    },
+    {
+        "id": "purple-three-step-sparring-three-new",
+        "name": "Three Step Sparring: Three New",
+        "details": "- Two joint-manipulation takedowns that leave you controlling your opponent on the ground\n- One that ends with a finishing technique",
+        "advancedNotes": "",
+        "rankId": "purple",
+        "categoryId": "three-step-sparring",
+        "sortOrder": 11
+    },
+    {
+        "id": "purple-ground-fighting-rape-defense",
+        "name": "Rape Defense",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "purple",
+        "categoryId": "ground-fighting",
+        "sortOrder": 12
+    },
+    {
+        "id": "purple-ground-fighting-rolling-choke",
+        "name": "Rolling Choke",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "purple",
+        "categoryId": "ground-fighting",
+        "sortOrder": 13
+    },
+    {
+        "id": "purple-theory-application-of-body-mechanics",
+        "name": "Application of Body Mechanics",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "purple",
+        "categoryId": "theory",
+        "sortOrder": 14
+    },
+    {
+        "id": "purple-weapons-knife-form-1",
+        "name": "Knife Form #1",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "purple",
+        "categoryId": "weapons",
+        "sortOrder": 15
+    },
+    {
+        "id": "purple-weapons-knife-7-cut-drill",
+        "name": "Knife: 7 Cut Drill",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "purple",
+        "categoryId": "weapons",
+        "sortOrder": 16
+    },
+    {
+        "id": "purple-weapons-knife-defenses-against-open-grip",
+        "name": "Knife: Defenses Against Open Grip",
+        "details": "- 2x against open grip stab\n- 2x against open grip slash\n- 2x against open grip reverse slash",
+        "advancedNotes": "",
+        "rankId": "purple",
+        "categoryId": "weapons",
+        "sortOrder": 17
+    },
+    {
+        "id": "purple-self-defense-hair-grab-front",
+        "name": "Hair Grab from Front Defense",
+        "details": "1. Pain based counter\n2. Disabling/lethal counter",
+        "advancedNotes": "",
+        "rankId": "purple",
+        "categoryId": "self-defense",
+        "sortOrder": 18
+    },
+    {
+        "id": "purple-self-defense-hair-grab-behind",
+        "name": "Hair Grab from Behind Defense",
+        "details": "1. Pain based counter\n2. Disabling/lethal counter",
+        "advancedNotes": "",
+        "rankId": "purple",
+        "categoryId": "self-defense",
+        "sortOrder": 19
+    },
+    {
+        "id": "purple-self-defense-two-shoulder-grab-front",
+        "name": "Two Shoulder Grab from Front Defense",
+        "details": "1. Pain based counter\n2. Disabling/lethal counter",
+        "advancedNotes": "",
+        "rankId": "purple",
+        "categoryId": "self-defense",
+        "sortOrder": 20
+    },
+    {
+        "id": "purple-self-defense-two-shoulder-grab-behind",
+        "name": "Two Shoulder Grab from Behind Defense",
+        "details": "1. Pain based counter\n2. Disabling/lethal counter",
+        "advancedNotes": "",
+        "rankId": "purple",
+        "categoryId": "self-defense",
+        "sortOrder": 21
+    },
+    {
+        "id": "purple-breaking-hook-kick",
+        "name": "Hook Kick Break (to Groin)",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "purple",
+        "categoryId": "breaking",
+        "sortOrder": 22
+    },
+    {
+        "id": "purple-written-test-explain-breaking-balance-pinning",
+        "name": "Explain Breaking Balance and Pinning",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "purple",
+        "categoryId": "written-test",
+        "sortOrder": 23
+    },
+    {
+        "id": "purple-written-test-muscular-internal-strength",
+        "name": "What is the Difference Between Muscular Power and Internal Strength?",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "purple",
+        "categoryId": "written-test",
+        "sortOrder": 24
+    },
+    {
+        "id": "brown-hand-stance-any-hand-technique",
+        "name": "Demonstrate Any Hand Technique Requested",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "brown",
+        "categoryId": "hand-stance",
+        "sortOrder": 0
+    },
+    {
+        "id": "brown-hand-stance-three-hkd-fighting-stances",
+        "name": "Demonstrate the Three Types of HKD Fighting Stances",
+        "details": "What does each stance typify in terms of fighting style: power (fists); grabbing (open hands); water(open hands, fingertips up)",
+        "advancedNotes": "",
+        "rankId": "brown",
+        "categoryId": "hand-stance",
+        "sortOrder": 1
+    },
+    {
+        "id": "brown-kicking-wheel-high-kick",
+        "name": "Wheel (High) Kick",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "brown",
+        "categoryId": "kicking",
+        "sortOrder": 2
+    },
+    {
+        "id": "brown-breakfalls-any",
+        "name": "Any Breakfall Requested",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "brown",
+        "categoryId": "breakfalls",
+        "sortOrder": 3
+    },
+    {
+        "id": "brown-throws-sweeps-harai-goshi",
+        "name": "Harai Goshi (Springing Hip Throw)",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "brown",
+        "categoryId": "throws-sweeps",
+        "sortOrder": 4
+    },
+    {
+        "id": "brown-throws-sweeps-tani-ot-oshi",
+        "name": "Tani Ot Toshi (Valley Drop)",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "brown",
+        "categoryId": "throws-sweeps",
+        "sortOrder": 5
+    },
+    {
+        "id": "brown-chokes-nails-up",
+        "name": "Gyaku-juji-jime (Nails Up Choke)",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "brown",
+        "categoryId": "chokes",
+        "sortOrder": 6
+    },
+    {
+        "id": "brown-pressure-points-back",
+        "name": "Back Pressure Points",
+        "details": "1. Between vertebrae 5 & 6 (shoulder blade area)\n2. Both kidneys\n3. Bursa",
+        "advancedNotes": "",
+        "rankId": "brown",
+        "categoryId": "pressure-points",
+        "sortOrder": 7
+    },
+    {
+        "id": "brown-locks-knee",
+        "name": "Knee Locks",
+        "details": "1. Elbow knee lock\n2. Cross-leg knee lock\n3. Turning knee lock",
+        "advancedNotes": "",
+        "rankId": "brown",
+        "categoryId": "locks",
+        "sortOrder": 8
+    },
+    {
+        "id": "brown-takedowns-knee-ankle",
+        "name": "Knee/Ankle Lock Takedowns",
+        "details": "Uke is using a kick:\n- 2x takedowns using knee or ankle lock\n\n(Uke must at least go to knee)",
+        "advancedNotes": "",
+        "rankId": "brown",
+        "categoryId": "takedowns",
+        "sortOrder": 9
+    },
+    {
+        "id": "brown-three-step-sparring-5-against-punch",
+        "name": "5x Defenses Against a Punch",
+        "details": "Block, Lock, Hit, Throw, Finish",
+        "advancedNotes": "",
+        "rankId": "brown",
+        "categoryId": "three-step-sparring",
+        "sortOrder": 10
+    },
+    {
+        "id": "brown-ground-fighting-hold-down-transition-review",
+        "name": "5x Hold Downs and Transitions (Review)",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "brown",
+        "categoryId": "ground-fighting",
+        "sortOrder": 11
+    },
+    {
+        "id": "brown-ground-fighting-coil-arm-lock",
+        "name": "Coil Arm Lock",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "brown",
+        "categoryId": "ground-fighting",
+        "sortOrder": 12
+    },
+    {
+        "id": "brown-theory-water-theory-sparring",
+        "name": "Water Theory as It Applies to Sparring",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "brown",
+        "categoryId": "theory",
+        "sortOrder": 13
+    },
+    {
+        "id": "brown-weapons-defense-closed-grip",
+        "name": "Knife: Defense Against Closed Grip Attacks",
+        "details": "- 2x against closed grip slash\n- 2x against closed grip reverse slash",
+        "advancedNotes": "",
+        "rankId": "brown",
+        "categoryId": "weapons",
+        "sortOrder": 14
+    },
+    {
+        "id": "brown-weapons-defense-combinations",
+        "name": "Knife: Defense Against Combination Techniques",
+        "details": "- 2x against open grip combination techniques\n- 2x against closed grip combination techniques",
+        "advancedNotes": "",
+        "rankId": "brown",
+        "categoryId": "weapons",
+        "sortOrder": 15
+    },
+    {
+        "id": "brown-self-defense-end-with-finish",
+        "name": "3 That End with Finishing Techniques",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "brown",
+        "categoryId": "self-defense",
+        "sortOrder": 16
+    },
+    {
+        "id": "brown-self-defense-end-subdued-uninjured",
+        "name": "3 That End with Opponent Subdued but Uninjured",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "brown",
+        "categoryId": "self-defense",
+        "sortOrder": 17
+    },
+    {
+        "id": "brown-breaking-spinning-ridgehand",
+        "name": "Spinning Ridgehand Hand Break (to Groin)",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "brown",
+        "categoryId": "breaking",
+        "sortOrder": 18
+    },
+    {
+        "id": "brown-written-test-relaxation-distance",
+        "name": "Importance of Relaxation and Distance in HKD",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "brown",
+        "categoryId": "written-test",
+        "sortOrder": 19
+    },
+    {
+        "id": "brown-written-test-mental-attitude",
+        "name": "Mental Attitude in HKD",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "brown",
+        "categoryId": "written-test",
+        "sortOrder": 20
+    },
+    {
+        "id": "red-hand-stance-any",
+        "name": "Demonstrate Any Hand Technique or Stance Requested",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "red",
+        "categoryId": "hand-stance",
+        "sortOrder": 0
+    },
+    {
+        "id": "red-kicking-dual-kicks",
+        "name": "Dual Kicks (Two Targets, Different Leg)",
+        "details": "Examples:\n- Crescent/crescent\n- Side/side\n- Front/side",
+        "advancedNotes": "",
+        "rankId": "red",
+        "categoryId": "kicking",
+        "sortOrder": 1
+    },
+    {
+        "id": "red-kicking-dual-combinations",
+        "name": "Dual Kicks/Combinations",
+        "details": "Examples:\n- Roundhouse, side two targets using the same leg\n- Front/back in place (not spin back kick)\n- Roundhouse/side",
+        "advancedNotes": "",
+        "rankId": "red",
+        "categoryId": "kicking",
+        "sortOrder": 2
+    },
+    {
+        "id": "red-breakfalls-teach",
+        "name": "Describe How to Teach Any Breakfall",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "red",
+        "categoryId": "breakfalls",
+        "sortOrder": 3
+    },
+    {
+        "id": "red-throws-sweeps-coil-arm-lock-throw",
+        "name": "Coil Arm Lock Throw",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "red",
+        "categoryId": "throws-sweeps",
+        "sortOrder": 4
+    },
+    {
+        "id": "red-throws-sweeps-randori",
+        "name": "Randori with One Opponent",
+        "details": "Successfully demonstrate your ability to throw in a controlled environment",
+        "advancedNotes": "",
+        "rankId": "red",
+        "categoryId": "throws-sweeps",
+        "sortOrder": 5
+    },
+    {
+        "id": "red-chokes-nails-down",
+        "name": "Gyaku-juji-jime (Nails Down Choke)",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "red",
+        "categoryId": "chokes",
+        "sortOrder": 6
+    },
+    {
+        "id": "red-pressure-points-any",
+        "name": "Any Pressure Point",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "red",
+        "categoryId": "pressure-points",
+        "sortOrder": 7
+    },
+    {
+        "id": "red-locks-neck",
+        "name": "Neck Locks",
+        "details": "1. Jaw twist\n2. Chink push\n3. Front lock (from punch)",
+        "advancedNotes": "",
+        "rankId": "red",
+        "categoryId": "locks",
+        "sortOrder": 8
+    },
+    {
+        "id": "red-takedowns-knee",
+        "name": "Knee Lock Takedowns",
+        "details": "Uke is attacking with a kick:\n- 2x takedowns using a knee lock\n\n(Uke must at least go to knee)",
+        "advancedNotes": "",
+        "rankId": "red",
+        "categoryId": "takedowns",
+        "sortOrder": 9
+    },
+    {
+        "id": "red-three-step-sparring-front-kick",
+        "name": "5x Defenses Against a Front Kick",
+        "details": "Block, Lock, Hit, Throw, Finish",
+        "advancedNotes": "",
+        "rankId": "red",
+        "categoryId": "three-step-sparring",
+        "sortOrder": 10
+    },
+    {
+        "id": "red-ground-fighting-cross-arm-lock",
+        "name": "Cross Arm Lock",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "red",
+        "categoryId": "ground-fighting",
+        "sortOrder": 11
+    },
+    {
+        "id": "red-ground-fighting-one-opponent",
+        "name": "Ground Fighting One Opponent",
+        "details": "Start from standing, opponent on ground",
+        "advancedNotes": "",
+        "rankId": "red",
+        "categoryId": "ground-fighting",
+        "sortOrder": 12
+    },
+    {
+        "id": "red-weapons-cane-strikes",
+        "name": "Cane: Basic Strikes",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "red",
+        "categoryId": "weapons",
+        "sortOrder": 13
+    },
+    {
+        "id": "red-weapons-knife-spar-armed",
+        "name": "Knife: Semi-spar Against Armed Opponent",
+        "details": "Opponent has dan bong or knife",
+        "advancedNotes": "",
+        "rankId": "red",
+        "categoryId": "weapons",
+        "sortOrder": 14
+    },
+    {
+        "id": "red-self-defense-multiple-strikes-kicks",
+        "name": "3 That Include Multiple Strikes and Kicks",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "red",
+        "categoryId": "self-defense",
+        "sortOrder": 15
+    },
+    {
+        "id": "red-self-defense-throws",
+        "name": "3 That Include Throws",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "red",
+        "categoryId": "self-defense",
+        "sortOrder": 16
+    },
+    {
+        "id": "red-breaking-crescent",
+        "name": "Crescent Kick Break",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "red",
+        "categoryId": "breaking",
+        "sortOrder": 17
+    },
+    {
+        "id": "red-written-test-neck-pressure-points",
+        "name": "Describe Neck Pressure Points and Prescribed Responses",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "red",
+        "categoryId": "written-test",
+        "sortOrder": 18
+    },
+    {
+        "id": "red-written-test-larger-opponent-targets",
+        "name": "Explain Prime Targets on Larger Opponents",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "red",
+        "categoryId": "written-test",
+        "sortOrder": 19
+    },
+    {
+        "id": "red-written-test-multiple-opponents",
+        "name": "Fighting Multiple Opponents",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "red",
+        "categoryId": "written-test",
+        "sortOrder": 20
+    },
+    {
+        "id": "red-black-hand-stance-any",
+        "name": "Demonstrate Any Hand Technique or Stance Requested",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "red-black",
+        "categoryId": "hand-stance",
+        "sortOrder": 0
+    },
+    {
+        "id": "red-black-kicking-multiple-kicks-different-legs",
+        "name": "Combination Kicks: 1 Opponent, Multiple Kicks, Different Legs",
+        "details": "Examples:\n- Roundhouse/axe\n- Roundhouse/back\n- Roundhouse/wheel",
+        "advancedNotes": "",
+        "rankId": "red-black",
+        "categoryId": "kicking",
+        "sortOrder": 1
+    },
+    {
+        "id": "red-black-kicking-multiple-kicks-same-leg",
+        "name": "Combination Kicks: 1 Opponent, Multiple Kicks, Same Leg",
+        "details": "Examples:\n- Roundhouse/hook\n- Front/side (sliding side, depending on distance)\n- Crescent/back",
+        "advancedNotes": "",
+        "rankId": "red-black",
+        "categoryId": "kicking",
+        "sortOrder": 2
+    },
+    {
+        "id": "red-black-breakfalls-demonstrate-teach",
+        "name": "Demonstrate or Teach Any Breakfall Technique",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "red-black",
+        "categoryId": "breakfalls",
+        "sortOrder": 3
+    },
+    {
+        "id": "red-black-throws-sweeps-sukui-nage",
+        "name": "Sukui Nage (Scooping/Back Throw)",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "red-black",
+        "categoryId": "throws-sweeps",
+        "sortOrder": 4
+    },
+    {
+        "id": "red-black-throws-sweeps-randori",
+        "name": "Randori with One Opponent",
+        "details": "Demonstrate ability to execute throws. Explain how you would modify the throw in a self-defense situation.",
+        "advancedNotes": "",
+        "rankId": "red-black",
+        "categoryId": "throws-sweeps",
+        "sortOrder": 5
+    },
+    {
+        "id": "red-black-chokes-pushing-forearm",
+        "name": "Pushing Forearm Choke",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "red-black",
+        "categoryId": "chokes",
+        "sortOrder": 6
+    },
+    {
+        "id": "red-black-pressure-points-pressure-point-from-effect",
+        "name": "Given a Desired Effect, Select an Appropriate Pressure Point",
+        "details": "i.e. I want the opponent to fall down without permanent structural damage, student may select a pressure point in the thigh",
+        "advancedNotes": "",
+        "rankId": "red-black",
+        "categoryId": "pressure-points",
+        "sortOrder": 7
+    },
+    {
+        "id": "red-black-takedowns-arm-double-lock",
+        "name": "Arm-Related Double Lock Takedowns",
+        "details": "Uke is attacking with straight grab:\n- 2x takedowns using an arm-related double lock\n\n(Uke must at least go to knee)",
+        "advancedNotes": "",
+        "rankId": "red-black",
+        "categoryId": "takedowns",
+        "sortOrder": 8
+    },
+    {
+        "id": "red-black-takedowns-leg-double-lock",
+        "name": "Leg-Related Double Lock Takedowns",
+        "details": "Uke is using a roundhouse kick to the midele:\n- 2x takedowns using a leg-related double lock\n\n(Uke must at least go to knee)",
+        "advancedNotes": "",
+        "rankId": "red-black",
+        "categoryId": "takedowns",
+        "sortOrder": 9
+    },
+    {
+        "id": "red-black-three-step-sparring-roundhouse-kick",
+        "name": "5x Defenses Against a Roundhouse Kick",
+        "details": "Block, Lock, Hit, Throw, Finish",
+        "advancedNotes": "",
+        "rankId": "red-black",
+        "categoryId": "three-step-sparring",
+        "sortOrder": 10
+    },
+    {
+        "id": "red-black-ground-fighting-one-opponent",
+        "name": "Ground Fighting One Opponent",
+        "details": "Start from ground, opponent standing",
+        "advancedNotes": "",
+        "rankId": "red-black",
+        "categoryId": "ground-fighting",
+        "sortOrder": 11
+    },
+    {
+        "id": "red-black-ground-fighting-knee-elbow-lock",
+        "name": "Knee Elbow Lock",
+        "details": "Ground #1 elbow across the knee lock",
+        "advancedNotes": "",
+        "rankId": "red-black",
+        "categoryId": "ground-fighting",
+        "sortOrder": 12
+    },
+    {
+        "id": "red-black-theory-situational-combat",
+        "name": "Situational Combat",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "red-black",
+        "categoryId": "theory",
+        "sortOrder": 13
+    },
+    {
+        "id": "red-black-weapons-cane-locks",
+        "name": "Cane: Basic Locks and Manipulations",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "red-black",
+        "categoryId": "weapons",
+        "sortOrder": 14
+    },
+    {
+        "id": "red-black-weapons-knife-spar-two-armed",
+        "name": "Knife: Free Spar Aagainst Two Armed Opponents",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "red-black",
+        "categoryId": "weapons",
+        "sortOrder": 15
+    },
+    {
+        "id": "red-black-self-defense-total-of-9",
+        "name": "Total of 9",
+        "details": "- 3 that include joint manipulation\n- 3 that include throws\n- 3 that include hand strikes and kicks",
+        "advancedNotes": "",
+        "rankId": "red-black",
+        "categoryId": "self-defense",
+        "sortOrder": 16
+    },
+    {
+        "id": "red-black-breaking-elbow",
+        "name": "Elbow Break (Chin or Back)",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "red-black",
+        "categoryId": "breaking",
+        "sortOrder": 17
+    },
+    {
+        "id": "red-black-written-test-distance-in-hkd",
+        "name": "Criticality of Distance in HKD",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "red-black",
+        "categoryId": "written-test",
+        "sortOrder": 18
+    },
+    {
+        "id": "red-black-written-test-teaching-beginners",
+        "name": "Keys to Teaching Beginners in HKD",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "red-black",
+        "categoryId": "written-test",
+        "sortOrder": 19
+    },
+    {
+        "id": "black-white-hand-stance-any",
+        "name": "Demonstrate Any Hand Technique or Stance Requested",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "black-white",
+        "categoryId": "hand-stance",
+        "sortOrder": 0
+    },
+    {
+        "id": "black-white-kicking-any",
+        "name": "Any Kicking Technique",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "black-white",
+        "categoryId": "kicking",
+        "sortOrder": 1
+    },
+    {
+        "id": "black-white-breakfalls-any",
+        "name": "Demonstrate or Teach Any Breakfall Technique",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "black-white",
+        "categoryId": "breakfalls",
+        "sortOrder": 2
+    },
+    {
+        "id": "black-white-throws-sweeps-shodan",
+        "name": "Shodan (Low Spinning Sweep)",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "black-white",
+        "categoryId": "throws-sweeps",
+        "sortOrder": 3
+    },
+    {
+        "id": "black-white-throws-sweeps-semi-spar-two-opponents",
+        "name": "Semi-spar with Two Opponents",
+        "details": "Demonstrate ability to execute throws. Explain how you would modify the throw in a self-defense situation.",
+        "advancedNotes": "",
+        "rankId": "black-white",
+        "categoryId": "throws-sweeps",
+        "sortOrder": 4
+    },
+    {
+        "id": "black-white-chokes-twisting-lapel",
+        "name": "Twisting Lapel Choke",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "black-white",
+        "categoryId": "chokes",
+        "sortOrder": 5
+    },
+    {
+        "id": "black-white-pressure-points-any",
+        "name": "Any Pressure Point",
+        "details": "Or name a pressure point that will give a desired reaction",
+        "advancedNotes": "",
+        "rankId": "black-white",
+        "categoryId": "pressure-points",
+        "sortOrder": 6
+    },
+    {
+        "id": "black-white-locks-counters",
+        "name": "Counters to Locks and Holds",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "black-white",
+        "categoryId": "locks",
+        "sortOrder": 7
+    },
+    {
+        "id": "black-white-locks-explain",
+        "name": "Explain How Joint Locks Work",
+        "details": "Explain in general how joint locks work and be prepared to describe how any given lock works. (i.e. wrist lock #1 works because the wrist is not designed to bend directly towards the side of the forearm.)",
+        "advancedNotes": "",
+        "rankId": "black-white",
+        "categoryId": "locks",
+        "sortOrder": 8
+    },
+    {
+        "id": "black-white-takedowns-any",
+        "name": "Any Takedowns",
+        "details": "Uke may use any attack:\n- 5x takedowns\n\n(Uke must at least go to knee)",
+        "advancedNotes": "",
+        "rankId": "black-white",
+        "categoryId": "takedowns",
+        "sortOrder": 9
+    },
+    {
+        "id": "black-white-three-step-sparring-total-of-20",
+        "name": "Three Step Sparring: Total of 20",
+        "details": "- 5 that include block, lock, hit, throw, finish\n- 5 against a variety of kicks\n- 5 that leave your opponent subdued by without permanent damage\n- 5 against a round punch",
+        "advancedNotes": "",
+        "rankId": "black-white",
+        "categoryId": "three-step-sparring",
+        "sortOrder": 10
+    },
+    {
+        "id": "black-white-ground-fighting-one-opponent",
+        "name": "Randori and move to ground at first throw or takedown",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "black-white",
+        "categoryId": "ground-fighting",
+        "sortOrder": 11
+    },
+    {
+        "id": "black-white-theory-advanced-ki-striking",
+        "name": "Advanced Ki Striking",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "black-white",
+        "categoryId": "theory",
+        "sortOrder": 12
+    },
+    {
+        "id": "black-white-weapons-dan-bong-free-spar",
+        "name": "Dan Bong: Free Spar",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "black-white",
+        "categoryId": "weapons",
+        "sortOrder": 13
+    },
+    {
+        "id": "black-white-weapons-knife-free-spar",
+        "name": "Knife: Free Spar",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "black-white",
+        "categoryId": "weapons",
+        "sortOrder": 14
+    },
+    {
+        "id": "black-white-weapons-cane-defend-against-attacks",
+        "name": "Cane: Defend Against Attacks",
+        "details": "- 2x against one armed opponent (armed with knife or dan bong)\n- Semi-spar against one opponent",
+        "advancedNotes": "",
+        "rankId": "black-white",
+        "categoryId": "weapons",
+        "sortOrder": 15
+    },
+    {
+        "id": "black-white-weapons-any-attack",
+        "name": "Defense against any attacks requested by judges",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "black-white",
+        "categoryId": "weapons",
+        "sortOrder": 16
+    },
+    {
+        "id": "black-white-self-defense-all-previous",
+        "name": "All Previous Techniques",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "black-white",
+        "categoryId": "self-defense",
+        "sortOrder": 17
+    },
+    {
+        "id": "black-white-breaking-wheel",
+        "name": "Wheel Kick Break",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "black-white",
+        "categoryId": "breaking",
+        "sortOrder": 18
+    },
+    {
+        "id": "black-white-written-test-thesis",
+        "name": "Submission of Thesis Required Prior to Taking 1st Dan Exam",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "black-white",
+        "categoryId": "written-test",
+        "sortOrder": 19
+    },
+    {
+        "id": "1st-dan-hand-stance-45-degree-elbow-inside-fighting",
+        "name": "45 Degree Elbows - Inside Fighting",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "1st-dan",
+        "categoryId": "hand-stance",
+        "sortOrder": 0
+    },
+    {
+        "id": "1st-dan-hand-stance-dan-jun-breathing",
+        "name": "Dan Jun Breathing",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "1st-dan",
+        "categoryId": "hand-stance",
+        "sortOrder": 1
+    },
+    {
+        "id": "1st-dan-hand-stance-hammerfist-fighting",
+        "name": "Hammerfist Fighting",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "1st-dan",
+        "categoryId": "hand-stance",
+        "sortOrder": 2
+    },
+    {
+        "id": "1st-dan-hand-stance-ki-striking",
+        "name": "Ki Striking",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "1st-dan",
+        "categoryId": "hand-stance",
+        "sortOrder": 3
+    },
+    {
+        "id": "1st-dan-kicking-circular-kicking",
+        "name": "Circular Kicking",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "1st-dan",
+        "categoryId": "kicking",
+        "sortOrder": 4
+    },
+    {
+        "id": "1st-dan-kicking-flying-scissors",
+        "name": "Flying Scissors",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "1st-dan",
+        "categoryId": "kicking",
+        "sortOrder": 5
+    },
+    {
+        "id": "1st-dan-throws-sweeps-skipping-kicking-sweeps",
+        "name": "Skipping/Kicking Sweeps",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "1st-dan",
+        "categoryId": "throws-sweeps",
+        "sortOrder": 6
+    },
+    {
+        "id": "1st-dan-pressure-points-expanded",
+        "name": "Expanded Pressure Points",
+        "details": "",
+        "advancedNotes": "Head/neck:\n-ST-5 - Middle of jaw neck turn\n- ST-9, SI-16 (combined with LI-18) - Three neck pressure points w/ knife hand\n- GB-21 - Top of traps\n\nBody\n- CO-17 - Breastbone (strike)\n- LV-13 - Liver shot\n- CO-15 - Xiphoid process\n\nBack\n- SI-11, SI-12, SI-13 - Scapula\n- BL-10 - Back of neck, either side of spine\n\nArm\n- LU-1 - Front of shoulder\n- LI-14 - Front of arm, just below deltoid\n- TW-11 - Just above back of elbow\n- PC-6 - Center of wrist",
+        "rankId": "1st-dan",
+        "categoryId": "pressure-points",
+        "sortOrder": 7
+    },
+    {
+        "id": "1st-dan-locks-hybrid",
+        "name": "Hybrid Locking",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "1st-dan",
+        "categoryId": "locks",
+        "sortOrder": 8
+    },
+    {
+        "id": "1st-dan-ground-fighting-hold-down-1-2-escapes",
+        "name": "Escapes from Hold Downs 1 and 2",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "1st-dan",
+        "categoryId": "ground-fighting",
+        "sortOrder": 9
+    },
+    {
+        "id": "1st-dan-theory-3d-targeting",
+        "name": "3D Targeting",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "1st-dan",
+        "categoryId": "theory",
+        "sortOrder": 10
+    },
+    {
+        "id": "1st-dan-weapons-dan-bong-techniques",
+        "name": "Dan Bong Techniques (10-12)",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "1st-dan",
+        "categoryId": "weapons",
+        "sortOrder": 11
+    },
+    {
+        "id": "1st-dan-weapons-knife-techniques",
+        "name": "Knife Techniques (10-12)",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "1st-dan",
+        "categoryId": "weapons",
+        "sortOrder": 12
+    },
+    {
+        "id": "1st-dan-weapons-cane-techniques",
+        "name": "Cane Techniques (20-25)",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "1st-dan",
+        "categoryId": "weapons",
+        "sortOrder": 13
+    },
+    {
+        "id": "1st-dan-self-defense-2-attackers",
+        "name": "Self Defense vs. 2 Attackers",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "1st-dan",
+        "categoryId": "self-defense",
+        "sortOrder": 14
+    },
+    {
+        "id": "2nd-dan-hand-stance-dan-jun-breathing-2",
+        "name": "Dan Jun Breathing 2",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "2nd-dan",
+        "categoryId": "hand-stance",
+        "sortOrder": 0
+    },
+    {
+        "id": "2nd-dan-hand-stance-iron-palm",
+        "name": "Iron Palm",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "2nd-dan",
+        "categoryId": "hand-stance",
+        "sortOrder": 0
+    },
+    {
+        "id": "2nd-dan-hand-stance-knifehand-fighting",
+        "name": "Knifehand Fighting",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "2nd-dan",
+        "categoryId": "hand-stance",
+        "sortOrder": 0
+    },
+    {
+        "id": "2nd-dan-kicking-aerial",
+        "name": "Aerial Kicking",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "2nd-dan",
+        "categoryId": "kicking",
+        "sortOrder": 0
+    },
+    {
+        "id": "2nd-dan-kicking-circle",
+        "name": "Circle Kicks",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "2nd-dan",
+        "categoryId": "kicking",
+        "sortOrder": 0
+    },
+    {
+        "id": "2nd-dan-breakfalls-tiger-roll",
+        "name": "Tiger Roll",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "2nd-dan",
+        "categoryId": "breakfalls",
+        "sortOrder": 0
+    },
+    {
+        "id": "2nd-dan-throws-sweeps-ahn-dan",
+        "name": "Ahn Dan",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "2nd-dan",
+        "categoryId": "throws-sweeps",
+        "sortOrder": 0
+    },
+    {
+        "id": "2nd-dan-pressure-points-hyul-do",
+        "name": "Hyul Do Fighting",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "2nd-dan",
+        "categoryId": "pressure-points",
+        "sortOrder": 0
+    },
+    {
+        "id": "2nd-dan-locks-hybrid-flow",
+        "name": "Hybrid Flow",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "2nd-dan",
+        "categoryId": "locks",
+        "sortOrder": 0
+    },
+    {
+        "id": "2nd-dan-ground-fighting-hold-down-3-4-escapes",
+        "name": "Escapes from Hold Downs 3 and 4",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "2nd-dan",
+        "categoryId": "ground-fighting",
+        "sortOrder": 0
+    },
+    {
+        "id": "2nd-dan-theory-meridians",
+        "name": "Meridians",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "2nd-dan",
+        "categoryId": "theory",
+        "sortOrder": 0
+    },
+    {
+        "id": "2nd-dan-weapons-dan-bong",
+        "name": "Dan Bong (10)",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "2nd-dan",
+        "categoryId": "weapons",
+        "sortOrder": 0
+    },
+    {
+        "id": "2nd-dan-weapons-knife",
+        "name": "Knife (10)",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "2nd-dan",
+        "categoryId": "weapons",
+        "sortOrder": 0
+    },
+    {
+        "id": "2nd-dan-weapons-cane",
+        "name": "Cane (10)",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "2nd-dan",
+        "categoryId": "weapons",
+        "sortOrder": 0
+    },
+    {
+        "id": "2nd-dan-weapons-sword",
+        "name": "Sword",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "2nd-dan",
+        "categoryId": "weapons",
+        "sortOrder": 0
+    },
+    {
+        "id": "2nd-dan-self-defense-escape-ground",
+        "name": "Escape From the Ground",
+        "details": "",
+        "advancedNotes": "",
+        "rankId": "2nd-dan",
+        "categoryId": "self-defense",
+        "sortOrder": 0
+    }
+]

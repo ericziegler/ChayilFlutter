@@ -85,7 +85,8 @@ class CategoryDetailsPageState extends State<CategoryDetailsPage> {
                       text: item.name,
                       backgroundHex: item.primaryColor,
                       foregroundHex: item.secondaryColor,
-                      imageAsset: item.imageAsset); // section header
+                      imageAsset:
+                          'assets/images/${item.imageAsset}'); // section header
                 } else if (item is Technique) {
                   final rank = _rankCache[item.rankId];
 

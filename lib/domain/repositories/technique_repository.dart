@@ -26,11 +26,9 @@ class TechniqueRepository {
         _secureStorage = secureStorageService ?? SecureStorageService();
 
   Future<List<Technique>> getAllTechniques() async {
-    final jsonStr = await _cacheService
-        .loadDecryptedJson('assets/data/techniques.json.enc');
-    final jsonMap = json.decode(jsonStr);
-    final techniqueList = TechniqueList.fromJson(jsonMap);
-    return techniqueList.techniques;
+    final jsonStr = await _cacheService.loadJson('assets/data/techniques.json');
+    final List<dynamic> jsonList = json.decode(jsonStr);
+    return jsonList.map((json) => Technique.fromJson(json)).toList();
   }
 
   Future<Technique> getTechnique(String techniqueId) async {
@@ -39,11 +37,9 @@ class TechniqueRepository {
   }
 
   Future<List<Category>> getAllCategories() async {
-    final jsonStr = await _cacheService
-        .loadDecryptedJson('assets/data/categories.json.enc');
-    final jsonMap = json.decode(jsonStr);
-    final categoryList = CategoryList.fromJson(jsonMap);
-    return categoryList.items;
+    final jsonStr = await _cacheService.loadJson('assets/data/categories.json');
+    final List<dynamic> jsonList = json.decode(jsonStr);
+    return jsonList.map((json) => Category.fromJson(json)).toList();
   }
 
   Future<Category> getCategory(String categoryId) async {
@@ -52,11 +48,9 @@ class TechniqueRepository {
   }
 
   Future<List<Rank>> getAllRanks() async {
-    final jsonStr =
-        await _cacheService.loadDecryptedJson('assets/data/ranks.json.enc');
-    final jsonMap = json.decode(jsonStr);
-    final rankList = RankList.fromJson(jsonMap);
-    return rankList.ranks;
+    final jsonStr = await _cacheService.loadJson('assets/data/ranks.json');
+    final List<dynamic> jsonList = json.decode(jsonStr);
+    return jsonList.map((json) => Rank.fromJson(json)).toList();
   }
 
   Future<Rank> getRank(String rankId) async {

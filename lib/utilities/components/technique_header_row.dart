@@ -38,7 +38,7 @@ class TechniqueHeaderRow extends StatelessWidget {
             ),
             child: Center(
               child: Image.asset(
-                imageAsset ?? 'assets/images/fist.png',
+                imageAsset != null ? imageAsset! : 'assets/images/fist.png',
                 width: imageSize,
                 height: imageSize,
                 fit: BoxFit.contain,
