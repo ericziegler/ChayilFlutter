@@ -81,7 +81,7 @@ class _RequestLoginPageState extends State<RequestLoginPage> {
                     ),
                     const SizedBox(height: 20),
                     const Text(
-                      'Request Login Code',
+                      'Member Login Code',
                       style: headerTextStyle,
                     ),
                     const SizedBox(height: 20),

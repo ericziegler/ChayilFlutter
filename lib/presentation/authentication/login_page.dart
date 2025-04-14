@@ -107,7 +107,7 @@ class _LoginPageState extends State<LoginPage> {
                     ),
                     const SizedBox(height: 20),
                     const Text(
-                      'Check your email for your access code. Enter it here to access the curriculum.',
+                      'MEMBERS: Check your email for your access code. Enter it here to access the curriculum.',
                       style: paragraphTextStyle,
                     ),
                     const SizedBox(height: 8),
@@ -130,7 +130,7 @@ class _LoginPageState extends State<LoginPage> {
                     ),
                     const SizedBox(height: 8),
                     const Text(
-                      'Give 1-3 minutes for code delivery.',
+                      'Please allow 1-3 minutes for code delivery.',
                       style: captionTextStyle,
                     ),
                   ],

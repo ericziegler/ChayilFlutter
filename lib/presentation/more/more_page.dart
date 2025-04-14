@@ -59,10 +59,11 @@ class _MorePageState extends State<MorePage> {
 
     await _userRepository.clearCachedUser();
 
+    // Use root navigator to fully exit the MainTabPage
     if (context.mounted) {
-      Navigator.of(context).pushAndRemoveUntil(
+      Navigator.of(context, rootNavigator: true).pushAndRemoveUntil(
         MaterialPageRoute(builder: (_) => const RequestLoginPage()),
-        (Route<dynamic> route) => false, // Remove all routes
+        (Route<dynamic> route) => false,
       );
     }
   }
