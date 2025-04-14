@@ -79,10 +79,11 @@ class RankDetailsPageState extends State<RankDetailsPage> {
                 final item = items[index];
                 if (item is Category) {
                   return TechniqueHeaderRow(
-                      text: item.name,
-                      backgroundHex: widget.rank.primaryColor,
-                      foregroundHex:
-                          widget.rank.secondaryColor); // section header
+                    text: item.name,
+                    backgroundHex: widget.rank.primaryColor,
+                    foregroundHex: widget.rank.secondaryColor,
+                    borderHex: widget.rank.stripeColor,
+                  ); // section header
                 } else if (item is Technique) {
                   return TechniqueRow(
                       text: item.name,

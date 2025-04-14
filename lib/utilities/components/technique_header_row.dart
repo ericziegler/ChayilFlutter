@@ -6,6 +6,7 @@ class TechniqueHeaderRow extends StatelessWidget {
   final String text;
   final String backgroundHex;
   final String foregroundHex;
+  final String borderHex;
   final String? imageAsset;
 
   const TechniqueHeaderRow({
@@ -13,6 +14,7 @@ class TechniqueHeaderRow extends StatelessWidget {
     required this.text,
     required this.backgroundHex,
     required this.foregroundHex,
+    required this.borderHex,
     this.imageAsset,
   }) : super(key: key);
 
@@ -33,9 +35,13 @@ class TechniqueHeaderRow extends StatelessWidget {
             padding: const EdgeInsets.all(2),
             width: imageSize,
             height: imageSize,
-            decoration: const BoxDecoration(
+            decoration: BoxDecoration(
               color: neutralColor,
               shape: BoxShape.circle,
+              border: Border.all(
+                color: HexColor.fromHex(borderHex).darken(0.15),
+                width: 2,
+              ),
             ),
             child: ClipOval(
               child: Image.asset(

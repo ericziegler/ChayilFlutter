@@ -85,6 +85,7 @@ class CategoryDetailsPageState extends State<CategoryDetailsPage> {
                       text: item.name,
                       backgroundHex: item.primaryColor,
                       foregroundHex: item.secondaryColor,
+                      borderHex: item.stripeColor,
                       imageAsset:
                           'assets/images/${item.imageAsset}'); // section header
                 } else if (item is Technique) {

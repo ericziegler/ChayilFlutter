@@ -17,6 +17,19 @@ extension HexColor on Color {
       '${blue.toRadixString(16).padLeft(2, '0')}';
 }
 
+extension ColorUtils on Color {
+  Color darken([double amount = .1]) {
+    assert(amount >= 0 && amount <= 1, 'amount must be between 0 and 1');
+    final f = 1 - amount;
+    return Color.fromARGB(
+      alpha,
+      (red * f).round(),
+      (green * f).round(),
+      (blue * f).round(),
+    );
+  }
+}
+
 const Color backgroundColor = Color(0xFF121212);
 const Color textColor = Color(0xFFFFFFFF);
 const Color secondaryTextColor = Color(0xFF888888);
