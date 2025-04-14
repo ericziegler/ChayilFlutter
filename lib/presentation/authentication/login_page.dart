@@ -126,7 +126,12 @@ class _LoginPageState extends State<LoginPage> {
                       onPressed: _isActionEnabled
                           ? () => _onLoginPressed(context)
                           : null,
-                    )
+                    ),
+                    const SizedBox(height: 8),
+                    const Text(
+                      'Give 1-3 minutes for code delivery.',
+                      style: captionTextStyle,
+                    ),
                   ],
                 ),
               ),

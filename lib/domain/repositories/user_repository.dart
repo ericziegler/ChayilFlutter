@@ -20,13 +20,10 @@ class UserRepository {
   // MARK: - User Caching
   // ===========================
 
-  Future<String?> loadSecureEmail() async {
-    return await _secureStorage.read(_authEmailKey);
-  }
-
-  Future<void> saveSecureEmail(String email) async {
-    await _secureStorage.write(_authEmailKey, email);
-  }
+  Future<String?> loadSecureEmail() async =>
+      await _secureStorage.read(_authEmailKey);
+  Future<void> saveSecureEmail(String email) async =>
+      await _secureStorage.write(_authEmailKey, email);
 
   Future<void> _saveUser(User user) async {
     await _secureStorage.write(_userEmailKey, user.email);
@@ -67,17 +64,14 @@ class UserRepository {
   Future<User?> authenticateUser() async {
     final email = await loadSecureEmail();
     final deviceId = await _loadCachedDeviceId() ?? '';
-
     if (email == null) return null;
 
     return await _authenticate(email, deviceId);
   }
 
   Future<User?> _authenticate(String email, String deviceId) async {
-    final response = await _network.get(
-      'user/authenticate.php?email=$email&device=$deviceId',
-    );
-
+    final response = await _network
+        .get('user/authenticate.php?email=$email&device=$deviceId');
     if (response['status'] == 'invalid') return null;
 
     if (response['status'] == 'canRegister') {
@@ -98,25 +92,20 @@ class UserRepository {
   // MARK: - Verification
   // ====================
 
-  // Send a verification code to the user's email
   Future<void> sendVerificationCode(String email) async {
     final response =
         await _network.get('user/send_verification.php?email=$email');
-
     if (response['status'] == 'success') {
       await saveSecureEmail(email);
     }
   }
 
-  // Verify a submitted login code
   Future<bool> verifyLoginCode(String code) async {
     final email = await loadSecureEmail();
     if (email == null) return false;
 
-    final response = await _network.get(
-      'user/verify.php?email=$email&code=$code',
-    );
-
+    final response =
+        await _network.get('user/verify.php?email=$email&code=$code');
     return response['status'] == 'success';
   }
 
@@ -124,11 +113,8 @@ class UserRepository {
   // MARK: - Device Registration
   // ===========================
 
-  bool needsDeviceRegistration(User user) {
-    return user.deviceId == null;
-  }
+  bool needsDeviceRegistration(User user) => user.deviceId == null;
 
-  // Register device ID for a user
   Future<User?> registerDevice(String email) async {
     final deviceId =
         await _loadCachedDeviceId() ?? await _getOrCreateDeviceId();
@@ -137,9 +123,7 @@ class UserRepository {
       'user/register_device.php?email=$email&device=$deviceId',
     );
 
-    if (response == null || response['email'] == null) {
-      return null;
-    }
+    if (response == null || response['email'] == null) return null;
 
     final user = User.fromJson(response);
     await _secureStorage.write(_authDeviceIdKey, deviceId);
@@ -148,15 +132,19 @@ class UserRepository {
   }
 
   Future<String?> _loadCachedDeviceId() async {
-    return await _secureStorage.read(_authDeviceIdKey);
+    if (Platform.isAndroid) {
+      final deviceInfo = DeviceInfoPlugin();
+      final info = await deviceInfo.androidInfo;
+      return info.id;
+    } else {
+      return await _secureStorage.read(_authDeviceIdKey);
+    }
   }
 
   Future<String> _getOrCreateDeviceId() async {
-    // First try to load it from secure storage
     final storedId = await _secureStorage.read(_authDeviceIdKey);
     if (storedId != null) return storedId;
 
-    // If not found, generate one based on device info
     final deviceInfo = DeviceInfoPlugin();
     String newId;
 
@@ -167,7 +155,7 @@ class UserRepository {
       final info = await deviceInfo.iosInfo;
       newId = info.identifierForVendor ?? _generateRandomId();
     } else {
-      newId = _generateRandomId(); // fallback for other platforms
+      newId = _generateRandomId();
     }
 
     await _secureStorage.write(_authDeviceIdKey, newId);

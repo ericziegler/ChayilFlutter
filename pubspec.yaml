@@ -15,6 +15,7 @@ dependencies:
   http: ^0.13.6
   json_annotation: ^4.8.0
   flutter_secure_storage: ^9.0.0
+  shared_preferences: ^2.2.2
   chewie: ^1.7.4
   smartlogger: ^1.1.4+1
   video_player: ^2.8.2
