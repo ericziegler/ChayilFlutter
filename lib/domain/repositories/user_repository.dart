@@ -114,7 +114,14 @@ class UserRepository {
   // MARK: - Device Registration
   // ===========================
 
-  bool needsDeviceRegistration(User user) => user.deviceId == null;
+  bool needsDeviceRegistration(User user) {
+    // DEMO and ADMIN users skip device registration entirely
+    if (user.role == UserRole.demo || user.role == UserRole.admin) {
+      return false;
+    }
+
+    return user.deviceId == null || user.deviceId == 'not_registered';
+  }
 
   Future<User?> registerDevice(String email) async {
     final deviceId =

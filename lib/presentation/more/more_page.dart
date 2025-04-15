@@ -53,7 +53,8 @@ class _MorePageState extends State<MorePage> {
 
   Future<void> _logout() async {
     User? user = await _userRepository.loadCachedUser();
-    if (user != null && user.role == UserRole.admin) {
+    if (user != null &&
+        (user.role == UserRole.admin || user.role == UserRole.demo)) {
       await _userRepository.clearDevice();
     }
 

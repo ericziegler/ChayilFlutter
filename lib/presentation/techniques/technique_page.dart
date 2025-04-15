@@ -79,7 +79,9 @@ class TechniquePageState extends State<TechniquePage> {
           await _techniqueRepository.getRank(loadedTechnique.rankId);
 
       List<String> videos = [];
-      if (_userRole != UserRole.student) {
+      if (_userRole == UserRole.admin ||
+          _userRole == UserRole.school ||
+          _userRole == UserRole.instructor) {
         videos = await _techniqueRepository.getTechniqueVideos(widget.id);
       }
 
@@ -87,7 +89,9 @@ class TechniquePageState extends State<TechniquePage> {
         setState(() {
           _technique = loadedTechnique;
           _rank = loadedRank;
-          if (_userRole != UserRole.student) {
+          if (_userRole == UserRole.admin ||
+              _userRole == UserRole.school ||
+              _userRole == UserRole.instructor) {
             _videoUrls = videos;
             _loadVideos();
           }

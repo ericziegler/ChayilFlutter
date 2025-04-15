@@ -24,6 +24,9 @@ enum UserRole {
 
   @JsonValue('ADMIN')
   admin,
+
+  @JsonValue('DEMO')
+  demo,
 }
 
 @JsonSerializable()

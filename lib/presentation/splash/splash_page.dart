@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:chayil/domain/repositories/user_repository.dart';
+import 'package:chayil/domain/models/users/user.dart';
 import 'package:chayil/presentation/authentication/request_login_page.dart';
 import 'package:chayil/presentation/authentication/register_device_page.dart';
 import 'package:chayil/presentation/main_tab/main_tab_page.dart';
@@ -61,9 +62,29 @@ class _SplashPageState extends State<SplashPage> with WidgetsBindingObserver {
 
   void _navigateTo(Widget page) {
     if (!mounted) return;
-    Navigator.of(context).pushReplacement(
-      MaterialPageRoute(builder: (context) => page),
+
+    final currentRoute = ModalRoute.of(context);
+
+    // Define a route name for comparison (optional improvement: use a route enum or string map)
+    final newRouteName = (page is MainTabPage) ? 'MainTab' : 'OtherPage';
+    final currentRouteName = currentRoute?.settings.name;
+
+    if (currentRouteName == newRouteName) return;
+
+    final newPageRoute = MaterialPageRoute(
+      builder: (context) => page,
+      settings: RouteSettings(name: newRouteName),
     );
+
+    if (currentRoute != null) {
+      Navigator.of(context).replace(
+        oldRoute: currentRoute,
+        newRoute: newPageRoute,
+      );
+    } else {
+      // fallback if ModalRoute is null (might be in edge cases or custom nav stacks)
+      Navigator.of(context).pushReplacement(newPageRoute);
+    }
   }
 
   @override

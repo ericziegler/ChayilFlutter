@@ -1,4 +1,4 @@
-package com.example.chayil
+package com.chayilmartialarts.app
 
 import io.flutter.embedding.android.FlutterActivity
 
