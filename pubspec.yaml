@@ -2,7 +2,7 @@ name: chayil
 description: "Official Chayil Martial Arts app."
 publish_to: 'none'
 
-version: 1.0.0+47
+version: 1.0.0+48
 
 environment:
   sdk: '>=3.2.3 <4.0.0'
