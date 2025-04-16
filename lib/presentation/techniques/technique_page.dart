@@ -91,7 +91,8 @@ class TechniquePageState extends State<TechniquePage> {
           _rank = loadedRank;
           if (_userRole == UserRole.admin ||
               _userRole == UserRole.school ||
-              _userRole == UserRole.instructor) {
+              _userRole == UserRole.instructor ||
+              _userRole == UserRole.demo) {
             _videoUrls = videos;
             _loadVideos();
           }
@@ -182,7 +183,8 @@ class TechniquePageState extends State<TechniquePage> {
                   const Divider(color: separatorColor),
                 ],
                 if ((_userRole == UserRole.admin ||
-                        _userRole == UserRole.school) &&
+                        _userRole == UserRole.school ||
+                        _userRole == UserRole.demo) &&
                     _technique.formattedAdvancedNotes() != null &&
                     _technique.formattedAdvancedNotes()!.isNotEmpty) ...[
                   const SizedBox(height: _verticalPadding),

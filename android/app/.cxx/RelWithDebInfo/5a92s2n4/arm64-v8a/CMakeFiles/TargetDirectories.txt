@@ -1,0 +1,2 @@
+/Users/ericziegler/Development/MyWorkFlutter/chayil/android/app/.cxx/RelWithDebInfo/5a92s2n4/arm64-v8a/CMakeFiles/rebuild_cache.dir
+/Users/ericziegler/Development/MyWorkFlutter/chayil/android/app/.cxx/RelWithDebInfo/5a92s2n4/arm64-v8a/CMakeFiles/edit_cache.dir

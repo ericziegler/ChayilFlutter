@@ -14,7 +14,7 @@ void showAlert(BuildContext context, String title, String message) {
         actions: <Widget>[
           TextButton(
             style: TextButton.styleFrom(
-              primary: accentColor,
+              foregroundColor: accentColor,
             ),
             onPressed: () {
               Navigator.of(context).pop(); // Close the dialog
