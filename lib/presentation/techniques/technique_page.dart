@@ -81,7 +81,8 @@ class TechniquePageState extends State<TechniquePage> {
       List<String> videos = [];
       if (_userRole == UserRole.admin ||
           _userRole == UserRole.school ||
-          _userRole == UserRole.instructor) {
+          _userRole == UserRole.instructor ||
+          _userRole == UserRole.demo) {
         videos = await _techniqueRepository.getTechniqueVideos(widget.id);
       }
 
