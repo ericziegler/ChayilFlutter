@@ -1,4 +1,5 @@
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class SecureStorageService {
   SecureStorageService._privateConstructor();
@@ -26,5 +27,17 @@ class SecureStorageService {
 
   Future<bool> containsKey(String key) async {
     return await _storage.containsKey(key: key);
+  }
+
+  /// Clears secure storage on fresh install
+  Future<void> initializeIfFreshInstall() async {
+    final prefs = await SharedPreferences.getInstance();
+    final hasRunBefore = prefs.getBool('hasRunBefore') ?? false;
+
+    if (!hasRunBefore) {
+      print("DELETING ALL");
+      await _storage.deleteAll();
+      await prefs.setBool('hasRunBefore', true);
+    }
   }
 }

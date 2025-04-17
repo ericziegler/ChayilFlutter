@@ -4,6 +4,7 @@ class AppField extends StatelessWidget {
   final String hintText;
   final TextEditingController? controller;
   final TextInputType keyboardType;
+  final bool autocorrect;
   final Function(String)? onChanged;
 
   const AppField({
@@ -11,6 +12,7 @@ class AppField extends StatelessWidget {
     required this.hintText,
     this.controller,
     this.keyboardType = TextInputType.text,
+    this.autocorrect = false,
     this.onChanged,
   }) : super(key: key);
 
@@ -23,6 +25,7 @@ class AppField extends StatelessWidget {
         controller: controller,
         style: const TextStyle(color: Colors.black),
         keyboardType: keyboardType,
+        autocorrect: autocorrect,
         onChanged: onChanged,
         decoration: InputDecoration(
           border: const OutlineInputBorder(),

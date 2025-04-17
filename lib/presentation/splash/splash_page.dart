@@ -1,3 +1,4 @@
+import 'package:chayil/domain/services/secure_storage_service.dart';
 import 'package:flutter/material.dart';
 import 'package:chayil/domain/repositories/user_repository.dart';
 import 'package:chayil/domain/models/users/user.dart';
@@ -14,12 +15,18 @@ class SplashPage extends StatefulWidget {
 
 class _SplashPageState extends State<SplashPage> with WidgetsBindingObserver {
   final UserRepository _userRepository = UserRepository();
+  final SecureStorageService _secureStorageService = SecureStorageService();
 
   @override
   void initState() {
     super.initState();
     WidgetsBinding.instance.addObserver(this);
-    _handleUserFlow();
+
+    WidgetsBinding.instance.addPostFrameCallback((_) async {
+      Future.delayed(const Duration(milliseconds: 500), () {
+        _handleUserFlow();
+      });
+    });
   }
 
   @override
@@ -36,6 +43,7 @@ class _SplashPageState extends State<SplashPage> with WidgetsBindingObserver {
   }
 
   Future<void> _handleUserFlow() async {
+    await _secureStorageService.initializeIfFreshInstall();
     final user = await _userRepository.authenticateUser();
 
     if (!mounted) return;

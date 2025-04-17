@@ -114,6 +114,7 @@ class _LoginPageState extends State<LoginPage> {
                     AppField(
                       hintText: 'Access code',
                       keyboardType: const TextInputType.numberWithOptions(),
+                      autocorrect: false,
                       onChanged: (value) {
                         setState(() {
                           _code = value;
